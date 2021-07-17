@@ -347,26 +347,35 @@ class Drink{
      console.log(mix);
      });
     
-    $("#ingBtnLiqueurNone").click(function(){
-     $("#titleLiqueur").hide();
-     $(".ingBtnLiqueur").hide();
-     $("#ingBtnLiqueurNone").hide();
-     $("#ingBtnLiqueurNext").hide();
-     $("#liqueurBackButton").hide();
-     $("#mixersBackButton").show();
-     $("#titleMixers").fadeIn(600);
-     $(".ingBtnMixers").fadeIn(600);
-     $("#deleteButton2").show();
-     $("#deleteButton3").hide();
-     $("#ingBtnMixersNext").show();
-     $("#ingDisplayLiqueur").text(this.value);
-     mix[3] = this.value;
+    $("#ingBtnGarnishNone").click(function(){
+     $("#ingDisGar1").text(this.value);
+     mix[5] = [this.value];
      console.log(mix);
     });
+
+    $("#ingBtnLiqueurNone").click(function(){
+        $("#titleLiqueur").hide();
+        $(".ingBtnLiqueur").hide();
+        $("#ingBtnLiqueurNone").hide();
+        $("#ingBtnLiqueurNext").hide();
+        $("#liqueurBackButton").hide();
+        $("#mixersBackButton").show();
+        $("#titleMixers").fadeIn(600);
+        $(".ingBtnMixers").fadeIn(600);
+        $("#deleteButton2").show();
+        $("#deleteButton3").hide();
+        $("#ingBtnMixersNext").show();
+        $("#ingDisplayLiqueur").text(this.value);
+        mix[3] = this.value;
+        console.log(mix);
+       });
     
     $("#ingBtnLiquorNext").click(function(){
      var x = document.getElementById("ingredientsDisplay");
-     if(mix[2].length >= 3){
+     if (mix[2].length === 0){
+        x.querySelector("#ingDisplayLiquor").innerHTML = "None";
+         mix[2] = ["None"];
+     } else if(mix[2].length >= 3){
       mix[2].splice(2);
      }
      $("#liquorBackButton").hide();
@@ -396,7 +405,8 @@ class Drink{
      $("#mixersBackButton").show();
      $("#ingBtnMixersNext").show();
      if(mix[3].length === 0){
-      $("#ingDisplayLiqueur").text("...add a liqueuer...")
+      $("#ingDisplayLiqueur").text("None")
+      mix[3] = "None";
      }
      console.log(mix)
     }); 
@@ -408,6 +418,7 @@ class Drink{
      $("#titleMixers").hide();
      $(".ingBtnMixers").hide();
      $("#ingBtnMixersNone").hide();
+     $("#ingBtnGarnishNone").show();
      $("#ingBtnMixersNext").hide();
      $("#garnishBackButton").show();
      $("#deleteButton").show();
