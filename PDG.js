@@ -209,7 +209,7 @@ class Drink{
      console.log(mix)
      
      /* Drink List Reset */
-     $("#AFBrecipeTitle").hide();
+    $("#AFBrecipeTitle").hide();
     $("#AFBrecipe").hide();
     $("#AMrecipeTitle").hide();
     $("#AMrecipe").hide();
@@ -444,6 +444,7 @@ class Drink{
      $("#liquorBackButton").hide();
      $("#liqueurBackButton").hide();
      $("#garnishBackButton").hide();
+     $("#ingBtnGarnishNone").hide();
      $("#deleteButton").hide();
      $("#deleteButton2").hide();
      $("#deleteButton3").hide();

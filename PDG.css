@@ -702,6 +702,10 @@
     padding-left: 1%;
     padding-top: 10vh;
    }
+
+   #FGPFBrecipeTitle, #TNTRRFBrecipeTitle{
+     text-align: center;
+   }
   
    #recipeIngredientDiv,#AFBrecipe,#AMrecipe,#BSrecipe,#BOSrecipe,#CARArecipe,#CHURrecipe,#COCOrecipe,#CUCUMrecipe,#DROPrecipe,#EMrecipe,#FGPrecipe,#FGPFBrecipe,#JGrecipe,#MASrecipe,#MBDrecipe,#MICHrecipe,#NATrecipe,#OOFrecipe,#PMrecipe,#PALrecipe,#PPMrecipe,#SANGrecipe,#SOrecipe,#SBFrecipe,#TNTrecipe,#TNTRRrecipe,#TNTRRFBrecipe,#TROPMrecipe{
      font-size: 2vh;
