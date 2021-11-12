@@ -3,451 +3,86 @@
 
 <meta charset="UTF-8">
 
-<title>Project DG</title>
+<title>T&T Kitchen App</title>
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link rel="stylesheet" href="./PDG.css">
+<link rel="stylesheet" href="./style.css">
 
 <style>
 </style>
 
 <body>
-  <div class="orderDisplay">
-    <img src="https://tacosandtequilanaples.com/wp-content/uploads/2013/08/logo_sm.png" id="tntLogo">
-    <button id="drinkOrder" class="orderDisplayButtons">Drink Order</button>
-    <button id="mixerId" class="orderDisplayButtons">Mixer</button>
-    <p id="orderDisplayText">Waiting for order...</p>
-    <button id="drinkList" class="orderDisplayButtons">Drink List</button>
-    <button id="serveButton" class="orderDisplayButtons">Serve Drink</button> 
-    
-    <div id="menu">
-     <p>menu &#9776</p>
-    <!--
-    <p class="menuItems">help<br></p>
-    <p class="menuItems">info</p>
-    <p class="menuItems">contact</p>
-    -->
-    </div>
-   
-   </div>
-                                                                                         <!--Button Titles--> 
+    <div id="gridContainer">
+        <div class="grid-item item1">
+            <div class="nav-container">
+                <button class="nav-buttons" id="navMargarita">Margaritas</button>
+                <button class="nav-buttons" id="navFrozen">Frozen Drinks</button>
+                <button class="nav-buttons" id="navSpecialty">Specialty Drinks</button>
+                <button class="nav-buttons" id="navFishBowls">Fish Bowls</button>
+                <button class="nav-buttons" id="navDessert">Dessert Drinks</button>
+                <button class="nav-buttons" id="navOther">Other Drinks</button>
+            </div>
+        </div>
 
-   <div id="btnDisplayTitles">
-    <div id="titleGlass">
-     <h1>Glass</h1>                       
-    </div>
-    <div id="titleLiquor">
-     <h1>Liquor</h1>                       
-    </div>  
-    <div id="titleLiqueur">
-     <h1>Liqueur</h1>                       
-    </div>
-    <div id="titleMixers">
-     <h1>Mixers</h1>                       
-    </div>
-    <div id="titleGarnish">
-     <h1>Garnish</h1>                       
-    </div> 
-   </div>
+        <div class="grid-item item2">
+            <div class="button-container">
+                <button class="all-buttons margarita-buttons" id="bloodOrangeAndSage" value="bloodOrangeAndSage">Blood Orange<br>and<br>Sage</button>
+                <button class="all-buttons margarita-buttons" id="cucumberita" value="cucumberita">Cucumberita</button>
+                <button class="all-buttons margarita-buttons" id="dropItLikeItsHot" value="dropItLikeItsHot">Drop It<br>Like It's Hot</button>
+                <button class="all-buttons margarita-buttons" id="skinnyOrganic" value="skinnyOrganic">Skinny<br>Organic</button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
+                <button class="all-buttons margarita-buttons" id="" value=""></button>
 
-   <div class="ingBtnDisplay"> 
-   
-    <img src="https://tacosandtequilanaples.com/wp-content/uploads/2013/08/logo_sm.png" id="tntLogo2">
+                <div class="grid-item item3">
+                    <img id="drinkPhoto" src="./images/margarita.jpg" alt="margarita">
+                    <p id="drinkName">Margarita</p>
+                </div>  
+
+                <div class="grid-item item4">
+                    <div class="recipe-container">
+                        <p id="glass">Glass:</p>
+                        <p id="glass-recipe">Rocks Glass</p>
+                        <p id="liquor">Liquor:</p>
+                        <p id="liquor-recipe">Corazon Reposado 1.5 oz</p>
+                        <p id="liqueur">Liqueur:</p>
+                        <p id="liqueur-recipe">Solerno .5 oz</p>
+                        <p id="mixers">Mixers:</p>
+                        <p id="mixers-recipe">Blood Orange Juice .75 oz,<br>Honey Syrup .5 oz<br></p>
+                        <p id="garnish">Garnish:</p>
+                        <p id="garnish-recipe">Blood Orange Slice,<br>Sage (2-3 Leaves)</p>
+                        
+                    </div>  
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="grid-item item5">
+            <button class="nav-buttons" id="modeSwitchButton">Switch to Kitchen</button>
+        </div>
+    </div>
     
-    
-    
-                                                                                         <!--Glass Buttons-->
-   
-   <div class="ingButtons"> 
-   <div id="glassBtnContainer">
-    <button class="ingBtnGlass allButtonStyle" value="Beer Mug">Beer<br>Mug</button>
-    <button class="ingBtnGlass allButtonStyle" value="Copper Mug">Copper<br>Mug</button>
-    <button class="ingBtnGlass allButtonStyle" value="Coupe Glass">Coupe<br>Glass</button>
-    <button class="ingBtnGlass allButtonStyle" value="Fish Bowl">Fish<br>Bowl</button>
-    <button class="ingBtnGlass allButtonStyle" value="Hurricane Glass">Hurricane<br>Glass</button>
-    <button class="ingBtnGlass allButtonStyle" value="Margarita Glass">Margarita<br>Glass</button>
-    <button class="ingBtnGlass allButtonStyle" value="Mason Jar">Mason<br>Jar</button>
-    <button class="ingBtnGlass allButtonStyle" value="Pineapple Glass">Pineapple<br>Glass</button>
-    <button class="ingBtnGlass allButtonStyle" value="Pint Glass">Pint<br>Glass</button>
-    <button class="ingBtnGlass allButtonStyle" value="Rocks Glass">Rocks<br>Glass</button>
-    <button class="ingBtnGlass allButtonStyle" value="Wine Glass">Wine<br>Glass</button>
-    <!--<button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button>
-    <button class="ingBtnGlass allButtonStyle" value="" disabled></button> --> 
-    
-    </div> 
-                                                                                        <!--Liquor Buttons-->
-                                                                                       
-    <button class="ingBtnLiquor allButtonStyle" value="1800 Coconut 1.5 oz">1800 Coconut<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="1800 Reposado 1 oz">1800 Reposado<br>1 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Altos Blanco 1.5 oz">Altos Blanco<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Altos Blanco 2 oz">Altos Blanco<br>2 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Altos Reposado 1.5 oz">Altos Reposado<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Azunia Blanco 2 oz">Azunia Blanco<br>2 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Blue Chair Bay Banana Rum 1 oz">Blue Chair Bay<br>Banana Rum<br>1 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Blue Chair Bay Banana Rum 3 oz">Blue Chair Bay<br>Banana Rum<br>3 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Brugal Anejo Rum 1.25 oz">Brugal Anejo Rum<br>1.25 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Brugal Anejo Rum 3.75 oz">Brugal Anejo Rum<br>3.75 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Corazon Blanco 1.5 oz">Corazon Blanco<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Corazon Blanco 6 oz">Corazon Blanco<br>6 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Corazon Reposado 1.5 oz">Corazon Reposado<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Corralejo Silver 1.5 oz">Corralejo Silver<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Don Julio Blanco 1.5 oz">Don Julio Blanco<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Don Julio Reposado 1 oz">Don Julio Reposado<br>1 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Don Julio Anejo 1.5 oz">Don Julio Anejo<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Dulce Vida Pineapple 1.5 oz">Dulce Vida<br>Pineapple<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="El Jimador 2 oz">El Jimador<br>2 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="El Jimador 6 oz">El Jimador<br>6 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Four Roses Bourbon 1.5 oz">Four Roses Bourbon<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Los Vecinos Espadin Mezcal .5 oz">Los Vecinos Espadin Mezcal<br>.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Milagro Silver 2 oz">Milagro Silver<br>2 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Milagro Reposado 1.5 oz">Milagro Reposado<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Patron XO 1 oz">Patron XO<br>1 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="St. George California Citrus Vodka .75 oz">St. George<br>California Citrus Vodka<br>.75 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="St. George Green Chili Vodka 1.5 oz">St. George<br>Green Chili Vodka<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Tanteo Jalapeno 1.5 oz">Tanteo Jalapeno<br>1.5 oz</button>
-    <button class="ingBtnLiquor allButtonStyle" value="Volcan Blanco 1.5 oz">Volcan Blanco<br>1.5 oz</button>
-    <!--<button class="ingBtnLiquor allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiquor allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiquor allButtonStyle" value="" disabled></button>-->
   
-   
-                                                                                        <!--Liqueur Buttons-->
-    
-   <div id="liqueurBtnContainer">
-    <button class="ingBtnLiqueur allButtonStyle" value="Ancho Reyes Chili Liqueur .5 oz">Ancho Reyes<br>Chili Liqueur<br>.5 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="Ancho Reyes Chili Liqueur 1 oz">Ancho Reyes<br>Chili Liqueur<br>1 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="Ancho Reyes Verde Liqueur .5 oz">Ancho Reyes<br>Verde Liqueur<br>.5 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="Cointreau .5 oz">Cointreau<br>.5 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="Licor 43 1.5 oz">Licor 43<br>1.5 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="Solerno .5 oz">Solerno<br>.5 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="St. George Nola Coffee Vodka 1.5 oz">St. George Nola Coffee Vodka<br>1.5 oz</button>
-    <button class="ingBtnLiqueur allButtonStyle" value="Triple Sec 2 oz">Triple Sec<br>2 oz</button>
-    <!--<button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button> 
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button> 
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button> 
-    <button class="ingBtnLiqueur allButtonStyle" value="" disabled></button>  -->  
-    </div>
-   
-                                                                                        <!--Mixers Buttons-->       
-    
-    <button class="ingBtnMixers allButtonStyle" value="Agave .25 oz">Agave<br>.25 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Agave .5 oz">Agave<br>.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Agave .75 oz">Agave<br>.75 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Agave 1 oz">Agave<br>1 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Agave 2.25 oz">Agave<br>2.25 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Angostura Bitters (2 Dashes)">Angostura Bitters<br>(2 Dashes)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Avocado Sour Mix 3 oz">Avocado Sour Mix<br>3 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Blackberry (1 Muddled)">Blackberry<br>(1 Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Blackberry (3 Muddled)">Blackberry<br>(3 Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Blood Orange Juice .75 oz">Blood Orange Juice<br>.75 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Cayenne (2 Shakes)">Cayenne<br>(2 Shakes)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Chocolate Bitters (4 Dashes)">Chocolate Bitters<br>(4 Dashes)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Coconut Puree 1 oz">Coconut Puree<br>1 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Coffee 3 oz">Coffee<br>3 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Cola (Splash)">Cola<br>(Splash)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Cucumber (1 Slice Muddled)">Cucumber<br>(1 Slice Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Cucumber (2 Slices Muddled)">Cucumber<br>(2 Slices Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Cucumber (6 Slices Muddled)">Cucumber<br>(6 Slices Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Dos Equis">Dos Equis</button>
-    <button class="ingBtnMixers allButtonStyle" value="Espresso 3 oz (Chilled)">Espresso<br>3 oz<br>(Chilled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Ginger Beer 4 oz">Ginger Beer<br>4 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Grapefruit Soda 3 oz">Grapefruit Soda<br>3 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Guava Puree .5 oz">Guava Puree<br>.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Guava Puree .75 oz">Guava Puree<br>.75 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Guava Puree 1.5 oz">Guava Puree<br>1.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Happy Juice 2 oz">Happy Juice<br>2 oz</button>
-    <!--<button class="ingBtnMixers allButtonStyle" value="Happy Juice 3 oz">Happy Juice<br>3 oz</button>-->
-    <button class="ingBtnMixers allButtonStyle" value="Honey Syrup .5 oz">Honey Syrup<br>.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Jalapeno (1 Slice Muddled)">Jalapeno<br>(1 Slice Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lemon Juice .5 oz">Lemon Juice<br>.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice .25 oz">Lime Juice<br>.25 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice .5 oz">Lime Juice<br>.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice .75 oz">Lime Juice<br>.75 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice 1 oz">Lime Juice<br>1 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice 1.5 oz">Lime Juice<br>1.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice 2 oz">Lime Juice<br>2 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lime Juice 2.25 oz">Lime Juice<br>2.25 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Lolailo Sangria 4 oz">Lolailo Sangria<br>4 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Margarita Mix 8 oz">Margarita Mix<br>8 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Michelada Mix 5 oz">Michelada Mix<br>5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Orange (1 Slice Muddled)">Orange<br>(1 Slice Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Pineapple Juice .5 oz">Pineapple Juice<br>.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Pineapple Juice 1 oz">Pineapple Juice<br>1 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Pineapple Juice 2.25 oz">Pineapple Juice<br>2.25 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Prickly Pear Syrup 1 oz">Prickly Pear Syrup<br>1 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Strawberry Puree .75 oz">Strawberry<br>Puree<br>.75 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Tomatillo (1 Quarter Muddled)">Tomatillo<br>(1 Quarter Muddled)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Valentina .25 oz">Valentina<br>.25 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Vanilla (1 Dash)">Vanilla<br>(1 Dash)</button>
-    <button class="ingBtnMixers allButtonStyle" value="Vanilla 1 oz">Vanilla<br>1 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Watermelon Juice 1.5 oz">Watermelon Juice<br>1.5 oz</button>
-    <button class="ingBtnMixers allButtonStyle" value="Watermelon Juice 6 oz">Watermelon Juice<br>6 oz</button>
-    <!--<button class="ingBtnMixers allButtonStyle" value="" disabled></button>-->
-    
-                                                                                        <!--Garnish Buttons-->
-   
-   <div id="garnishBtnContainer"> 
-    <button class="ingBtnGarnish allButtonStyle" value="Bailey's Irish Cream (Float)">Bailey's<br>Irish Cream<br>(Float)</button> 
-    <button class="ingBtnGarnish allButtonStyle" value="Blackberry and Orange Slice (Flag)">Blackberry<br>and<br>Orange Slice<br>(Flag)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Blood Orange Slice">Blood Orange<br>Slice</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Coffee Bean">Coffee Bean</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Coronita">Coronita</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Cream (Float)">Cream<br>(Float)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Cucumber Slice (Length)">Cucumber Slice<br>(Length)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Cucumber Wheel">Cucumber<br>Wheel</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Dark Rum (Float)">Dark Rum<br>(Float)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Dried Chili Pepper (2 Split)">Dried Chili Pepper<br>(2 Split)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Flamed Orange Peel">Flamed<br>Orange Peel</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Grand Marnier (Float)">Grand Marnier<br>(Float)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Jalapeno (Slice)">Jalapeno<br>(Slice)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Lemon Twist">Lemon Twist</button>
-    <!--<button class="ingBtnGarnish allButtonStyle" value="Lime Wedge">Lime Wedge</button>-->
-    <button class="ingBtnGarnish allButtonStyle" value="Lime Wheel">Lime Wheel</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Orange Peel">Orange Peel</button>
-    <!--<button class="ingBtnGarnish allButtonStyle" value="Pineapple Wedge">Pineapple Wedge</button>-->
-    <button class="ingBtnGarnish allButtonStyle" value="Pineapple Wedge and Leaf">Pineapple Wedge<br>and<br>Leaf</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Sage (2-3 Leaves)">Sage<br>(2-3 Leaves)</button>
-    <button class="ingBtnGarnish allButtonStyle" value="Strawberry (Slice)">Strawberry<br>(Slice)</button>
-    <!--<button class="ingBtnGarnish allButtonStyle" value="" disabled></button>-->
-   </div>
-   
-    </div>  
-   </div>
-   <div class="footer">
-    <button id="liquorBackButton" class="footerButtons">&laquo; Back</button>
-    <button id="liqueurBackButton" class="footerButtons">&laquo; Back</button>
-    <button id="mixersBackButton" class="footerButtons">&laquo; Back</button>
-    <button id="garnishBackButton" class="footerButtons">&laquo; Back</button>
-    <button id="deleteButton" class="footerButtons">Delete</button>
-    <button id="deleteButton2" class="footerButtons">Delete</button>
-    <button id="deleteButton3" class="footerButtons">Delete</button>
-    <button id="ingBtnLiquorNone" class="footerButtons" value="None">None</button>
-    <button id="ingBtnLiqueurNone" class="footerButtons" value="None">None</button>
-    <button id="ingBtnMixersNone" class="footerButtons" value="None">None</button>
-    <!--<button id="ingBtnGarnishNone" class="footerButtons" value="None">None</button>-->
-    <button id="clearButton" class="footerButtons">Clear</button>
-    <button id="ingBtnLiquorNext" class="footerButtons">Next &raquo;</button>
-    <button id="ingBtnMixersNext" class="footerButtons">Next &raquo;</button>
-    <button id="ingBtnLiqueurNext" class="footerButtons">Next &raquo;</button>
-   </div>
-   
-   <!-- Trigger/Open The Result Modal -->
-   <!-- Result Modal -->
-   <div id="myModal" class="modal">
-   <!-- Modal content -->
-    <div id="myModalContent" class="modal-content">
-     <div id="closeHeader">
-      <span id="resultCloseButton" class="close">&times;</span>
-     </div>
-     <div id="imageDiv">
-     <img src="https://thumbor.thedailymeal.com/rUY6tKc6CkBM5fOh8WRPaPN4vgo=/870x565/https://www.thedailymeal.com/sites/default/files/story/2020/howtoorderacocktailatabar_main.jpg" alt="Drinks on a bar" id="modalImage">
-     </div>
-     <div id="textDiv">
-      <p id="modalText"></p>
-      </div>  
-     </div>
-   </div>
-   
-   <!-- Trigger/Open The Mixer Modal -->
-   <!-- Mixer Modal -->
-   <div id="myMixerModal" class="mixerModal">
-   <!-- Modal content -->
-    <div id="mixerModalContent" class="modal-content">
-     <div id="closeMixer">
-      <span id="mixerCloseButton" class="close">&times;</span>
-     </div>
-     <div id="mixerTitle">
-      <h2 id="mixerTitleText">Mixer</h2>
-     </div>
-     
-    
-     <div id="ingredientsDisplay">
-      <div id="ingDisplayContainer">
-        <h4 id="ingDisDrinkName" class="mixerIngredients">Drink Name:</h4>
-        <p id="ingDisRD" class="ingredients">...waiting for drink order...</p>
-        <h4 class="mixerIngredients">Glass:</h4>
-        <p id="ingDisplayGlass" class="ingredients">...add a glass...</p>
-        <h4 class="mixerIngredients">Liquor:</h4>
-        <p id="ingDisplayLiquor" class="ingredients">...add a Liquor...</p>
-        <p id="ingDisplayLiquor2" class="ingredients">...add a Liquor...</p>
-        <h4 class="mixerIngredients">Liqueur:</h4>
-        <p id="ingDisplayLiqueur" class="ingredients">...add a liqueur...</p>
-        <h4 class="mixerIngredients">Mixers:</h4>
-        <p id="ingDisMix1" class="ingredients">...add a mixer...</p>
-        <p id="ingDisMix2" class="ingredients">...add a mixer...</p>
-        <p id="ingDisMix3" class="ingredients">...add a mixer...</p>
-        <p id="ingDisMix4" class="ingredients">...add a mixer...</p>
-        <h4 class="mixerIngredients">Garnish:</h4>
-        <p id="ingDisGar1" class="ingredients">...add a garnish...</p>
-        <p id="ingDisGar2" class="ingredients">...add a garnish...</p>
-      </div>
-      
-     </div>
-    </div>
-   </div>
-   
-   
-   <!-- Trigger/Open The Drink List Modal -->
-   <!-- The Modal -->
-   <div id="myModalDrinkList" class="modal">
-   <!-- Modal content -->
-    <div class="modal-content modal-content2">
-     <div id="closeDrinkListHeader">
-      <p id="backButton" class="previous">&laquo; Back</p>
-      <span id="closeDrinkList" class="close">&times;</span>
-     </div>
-     
-     <div id="drinkListTitleDiv">
-      <h3 id="modalTextDrinkList">Drink List</h3>
-     </div>
-     
-     <div id="drinkListDrinkNames">
-      <ul id="drinkListItems">
-       <div id="drinkListColomn1" class="drinkListNames">
-        <li id="AFB">Aldorona<br>(Fish Bowl)</li><br>
-        <li id="AM">Avocado Margarita</li><br>
-        <li id="BS">Baby Stout</li><br>
-        <li id="BOS">Blood Orange and Sage</li><br>
-        <li id="CARA">Carajillo</li><br>
-        <li id="CHUR">Churchill</li><br>
-        <li id="COCO">CocoRita</li><br>
-        <li id="CUCUM">CucumbeRita</li><br>
-        <li id="DROP">Drop It LIke It's Hot</li><br>
-        <li id="EM">Espresso Martini</li><br>
-        <li id="FGP">Florida Grove Punch</li><br>
-        <li id="FGPFB">Florida Grove Punch<br>(Fish Bowl)</li><br>
-        <li id="JG">Jalisco Gardens</li><br>
-        <li id="MAS">Maserita</li><br>
-        <li id="MBD">Mexican Bull Dog</li><br>
-       </div>
-       <div id="drinkListColomn2" class="drinkListNames">
-        <li id="MICH">Michelada</li><br>
-        <li id="NAT">Naturita</li><br>
-        <li id="OOF">Oaxacan Old Fashioned</li><br>
-        <li id="PM">Pacific Mule</li><br>
-        <li id="PAL">Paloma</li><br>
-        <li id="PPM">Prickly Pear Margarita</li><br>
-        <li id="SANG">Sangria</li><br>
-        <li id="SO">Skinny Organic</li><br>
-        <li id="SBF">Spicy Berry Fresca</li><br>
-        <li id="TNT">T&T Rita</li><br>
-        <li id="TNTRR">T&T Rum Runner</li><br>
-        <li id="TNTRRFB">T&T Rum Runner<br>(Fish Bowl)</li><br>
-        <li id="TROPM">Tropical Margarita</li><br>
-       </div>
-      </ul>
-     </div>
-     
-     
-     
-      
-     
-     
-     
-     
-     
-     
-     
-     
-     <div id="recipeDiv">
-      
-    <div id="recipeTitleDiv">
-      <div id="imageDiv">
-        <img src="https://thumbor.thedailymeal.com/rUY6tKc6CkBM5fOh8WRPaPN4vgo=/870x565/https://www.thedailymeal.com/sites/default/files/story/2020/howtoorderacocktailatabar_main.jpg" alt="Drinks on a bar" id="modalImage2">
-      </div>
-      <h3 id="AFBrecipeTitle" style="text-decoration: underline;">Aldorona<br>(Fish Bowl)</h3>
-      <h3 id="AMrecipeTitle" style="text-decoration: underline;">Avocado Margarita</h3>
-      <h3 id="BSrecipeTitle" style="text-decoration: underline;">Baby Stout</h3>
-      <h3 id="BOSrecipeTitle" style="text-decoration: underline;">Blood Orange and Sage</h3>
-      <h3 id="CARArecipeTitle" style="text-decoration: underline;">Carajillo</h3>
-      <h3 id="CHURrecipeTitle" style="text-decoration: underline;">Churchill</h3>
-      <h3 id="COCOrecipeTitle" style="text-decoration: underline;">CocoRita</h3>
-      <h3 id="CUCUMrecipeTitle" style="text-decoration: underline;">CucumbeRita</h3>
-      <h3 id="DROPrecipeTitle" style="text-decoration: underline;">Drop It Like It's Hot</h3>
-      <h3 id="EMrecipeTitle" style="text-decoration: underline;">Espresso Martini</h3>
-      <h3 id="FGPrecipeTitle" style="text-decoration: underline;">Florida Grove Punch</h3>
-      <h3 id="FGPFBrecipeTitle" style="text-decoration: underline;">Florida Grove Punch<br>(Fish Bowl)</h3>
-      <h3 id="JGrecipeTitle" style="text-decoration: underline;">Jalisco Gardens</h3>
-      <h3 id="MASrecipeTitle" style="text-decoration: underline;">Maserita</h3>
-      <h3 id="MBDrecipeTitle" style="text-decoration: underline;">Mexican Bull Dog</h3>
-      <h3 id="MICHrecipeTitle" style="text-decoration: underline;">Michelada</h3>
-      <h3 id="NATrecipeTitle" style="text-decoration: underline;">Naturita</h3>
-      <h3 id="OOFrecipeTitle" style="text-decoration: underline;">Oaxacan Old Fashioned</h3>
-      <h3 id="PMrecipeTitle" style="text-decoration: underline;">Pacific Mule</h3>
-      <h3 id="PALrecipeTitle" style="text-decoration: underline;">Paloma</h3>
-      <h3 id="PPMrecipeTitle" style="text-decoration: underline;">Prickly Pear Margarita</h3>
-      <h3 id="SANGrecipeTitle" style="text-decoration: underline;">Sangria</h3>
-      <h3 id="SOrecipeTitle" style="text-decoration: underline;">Skinny Organic</h3>
-      <h3 id="SBFrecipeTitle" style="text-decoration: underline;">Spicy Berry Fresca</h3>
-      <h3 id="TNTrecipeTitle" style="text-decoration: underline;">T&T Rita</h3>
-      <h3 id="TNTRRrecipeTitle" style="text-decoration: underline;">T&T Rum Runner</h3>
-      <h3 id="TNTRRFBrecipeTitle" style="text-decoration: underline;">T&T Rum Runner<br>(Fish Bowl)</h3>
-      <h3 id="TROPMrecipeTitle" style="text-decoration: underline;">Tropical Margarita</h3>
-    </div>
 
-    <div id="recipeIngredientDiv">
-      <p id="AFBrecipe">Glass: Fish Bowl<br><br>Liquor: El Jimador 6 oz<br><br>Liqeuer: Triple Sec 2 oz<br><br>Mixers: Lime Juice 1.5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Margarita Mix 8 oz<br><br>Garnish: Coronita,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Wheel</p>
-      <p id="AMrecipe">Glass: Hurricane Glass<br><br>Liquor: Don Julio Anejo 1.5 oz<br><br>Liqueur: Cointreau .5 oz<br><br>Mixers: Avocado Sour Mix 3 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .75 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="BSrecipe">Glass: Rocks Glass<br><br>Liquor: Patron XO 1 oz<br><br>Liqueur: None<br><br>Mixer: Coffee 3 oz<br><br>Garnish: Bailey's Irish Cream (Float),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coffee Bean</p>
-      <p id="BOSrecipe">Glass: Rocks Glass<br><br>Liquor: Corazon Reposado 1.5 oz<br><br>Liqueur: Solerno .5 oz<br><br>Mixers: Blood Orange Juice .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Honey Syrup .5 oz<br><br>Garnish: Blood Orange Slice,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sage (2-3 Leaves)</p>     
-      <p id="CARArecipe">Glass: Rocks Glass<br><br>Liqueur: Licor 43 1.5 oz<br><br>Mixer: Coffee 3 oz<br><br>Garnish: Lemon Twist</p>
-      <p id="CHURrecipe">Glass: Rocks Glass<br><br>Liquor: Four Roses Bourbon 1.5 oz<br><br>Liqueur: Ancho Reyes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chili Liqueur .5 oz<br><br>Mixers: Agave .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blackberry (1 Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lemon Juice .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orange (1 Slice Muddled)<br><br>Garnish: Blackberry and Orange Slice<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Flag)</p>
-      <p id="COCOrecipe">Glass: Hurricane Glass<br><br>Liquor: 1800 Coconut 1.5 oz<br><br>Liqueur: Cointreau .5 oz<br><br>Mixers: Coconut Puree 1 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Juice .5 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="CUCUMrecipe">Glass: Margarita Glass<br><br>Liquor: Milagro Reposado 1.5 oz<br><br>Liqueur: Cointreau .5 oz<br><br>Mixers: Agave .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cayenne (2 Shakes),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cucumber (2 Slices Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 2 oz<br><br>Garnish: Cucumber Wheel</p>  
-      <p id="DROPrecipe">Glass: Margarita Glass<br><br>Liquor: Tanteo Jalapeno 1.5 oz<br><br>Liqueur: Cointreau .5 oz<br><br>Mixers: Agave .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cayenne (2 Shakes),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 2 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valentina .25 oz<br><br>Garnish: Dried Chili Pepper (2 Split)</p>     
-      <p id="EMrecipe">Glass: Coupe Glass<br><br>Liqour: Don Julio Reposado 1 oz<br><br>Liqueur: Ancho Reyes Chili Liqueur 1 oz<br><br>Mixers: Chocolate Bitters (4 Dashes),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espresso 3 oz (Chilled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vanilla 1 oz<br><br>Garnish: Orange Peel</p> 
-      <p id="FGPrecipe">Glass: Pineapple Glass<br><br>Liquor: Corazon Blanco 1.5 oz<br><br>Mixers: Agave .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cucumber (3 Slices Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watermelon Juice 1.5 oz<br><br>Garnish: Pineapple Wedge and Leaf</p>
-      <p id="FGPFBrecipe">Glass: Fish Bowl<br><br>Liquor: Corazon Blanco 6 oz<br><br>Mixers: Agave 2.25 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cucumber (6 Slices Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 1.5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watermelon Juice 6 oz<br><br>Garnish: Pineapple Wedge and Leaf</p>
-      <p id="JGrecipe">Glass: Rocks Glass<br><br>Liquor: Volcan Blanco 1.5 oz<br><br>Liqueur: Ancho Reyes Verde Liqueur .5 oz<br><br>Mixers: Agave .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomatillo (1 Quarter Muddled)<br><br>Garnish: Lime Wheel</p>
-      <p id="MASrecipe">Glass: Margarita Glass<br><br>Liquor: Milagro Silver 2 oz<br><br>Liqueur: None<br><br>Mixers: Agave 1 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy Juice 2 oz<br><br>Garnish: Grand Marnier (Float),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Wheel</p>
-      <p id="MBDrecipe">Glass: Rocks Glass<br><br>Liquor: 1800 Reposado 1 oz<br><br>Liqueur: St. George Nola Coffee Vodka 1.5 oz<br><br>Mixers: Cola (Splash)<br><br>Garnish: Cream (Float)</p>
-      <p id="MICHrecipe">Glass: Beer Mug<br><br>Mixers: Dos Equis,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Michelada Mix 5 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="NATrecipe">Glass: Hurricane Glass<br><br>Liquor: Altos Blanco 2 oz<br><br>Mixers: Agave 1 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy Juice 2 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="OOFrecipe">Glass: Rocks Glass<br><br>Liquor: Altos Reposado 1.5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Los Vecinos Espadin Mezcal .5 oz<br><br>Mixers: Agave .25 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angostura Bitters (2 Dashes)<br><br>Garnish: Flamed Orange Peel</p>
-      <p id="PMrecipe">Glass: Copper Mug<br><br>Liquor: St. George Green Chili Vodka 1.5 oz<br><br>Mixers: Agave .25 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cucumber (1 Slice Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ginger Beer 4 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .25 oz<br><br>Garnish: Cucumber Slice (Length)</p>
-      <p id="PALrecipe">Glass: Rocks Glass<br><br>Liquor: Altos Blanco 1.5 oz<br><br>Mixers: Agave .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grapefruit Soda 3 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .25 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="PPMrecipe">Glass: Hurricane Glass<br><br>Liquor: Don Julio Blanco 1.5 oz<br><br>Liqueur: Cointreau .5 oz<br><br>Mixers: Lime Juice .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Juice .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prickly Pear Syrup 1 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="SANGrecipe">Glass: Wine Glass<br><br>Liquor: St. George California Citrus Vodka<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.75 oz<br><br>Mixers: Agave .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blackberry (3 Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lolailo Sangria 4 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orange (1 Slice Muddled)<br><br>Garnish: Blackberry and Orange Slice<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Flag)</p>
-      <p id="SOrecipe">Glass: Hurricane Glass<br><br>Liquor: Azunia Blanco 2 oz<br><br>Mixers: Agave 1 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 1.5 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="SBFrecipe">Glass: Rocks Glass<br><br>Liquor: Dulce Vida Pineapple 1.5 oz<br><br>Mixers: Grapefruit Soda 3 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalapeno (1 Slice Muddled),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strawberry Puree .75 oz<br><br>Garnish: Jalapeno (Slice),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strawberry (Slice)</p>
-      <p id="TNTrecipe">Glass: Mason Jar<br><br>Liquor: El Jimador 2 oz<br><br>Ligueur: Cointreau .5 oz<br><br>Mixers: Agave .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 2 oz<br><br>Garnish: Lime Wheel</p>
-      <p id="TNTRRrecipe">Glass: Pineapple Glass<br><br>Liquor: Brugal Anejo Rum 1.25 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blue Chair Bay Banana Rum 1 oz<br><br>Mixers: Guava Puree .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 1 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Juice 1 oz<br><br>Garnish: Dark Rum (Float),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Wedge and Leaf</p>
-      <p id="TNTRRFBrecipe">Glass: Fish Bowl<br><br>Liquor: Brugal Anejo Rum 3.75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blue Chair Bay Banana Rum 3 oz<br><br>Mixers: Guava Puree 1.5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice 2.25 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Juice 2.25 oz<br><br>Garnish: Dark Rum (Float),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Wedge and Leaf</p>
-      <p id="TROPMrecipe">Glass: Pineapple Glass<br><br>Liquor: Corralejo Silver 1.5 oz<br><br>Liqueur: Cointreau .5 oz<br><br>Mixers: Guava Puree .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lime Juice .75 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pineapple Juice .5 oz,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vanilla (1 Dash)<br><br>Garnish: Pineapple Wedge and Leaf</p>
-    </div>
-
-
-      
-      
-     </div>
-    </div>
-   </div>
-
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./PDG.js"></script> <!--  my script -->
+  <script src="./script.js"></script>
 </body>
 </html>
-
-
-
 
 
 
