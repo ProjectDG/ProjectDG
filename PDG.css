@@ -1,762 +1,201 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
- 
- *::-webkit-scrollbar {
-  display: none;
- }
- 
- body {
-  /*border:  2px solid red;*/
-  min-height: 100vh;
- }
- 
- button{
-  box-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
- }
- 
- button:focus, button:hover{
-  outline: 0;
-  background-color: rgb(44,47,56);
- }
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
 
- #tntLogo2{/*
-  display: none;
-  */
-  position: absolute;
-  opacity: 30%;
-  height: 40vh;
-}
- 
- .orderDisplay {
-  position: relative;
-  z-index: 0;
-  height: 15vh;
-  border: 2px solid black;
-  background: url("http://wallpapercave.com/wp/9OsQHDB.jpg");  
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
- }
- 
- .orderDisplayButtons {
-  width: 8vw;
-  height: 10vh;
-  margin: 10px;
-  padding: 5px 5px;
-  border: 2px solid dark grey;
-  background-color: black;
-  opacity: 0.87;
-  color: white;
-  font-size: .8em;
-  border-radius: 12.5%;
- }
- 
- #orderDisplayText {
-  width: 45vw;
-  padding: 10px;
-  border: 2px solid black;
-  background: white;
-  text-align: center;
- }
- 
- .ingBtnDisplay {
-  /*border: 2px solid red;*/
-  position: relative;
-  z-index: 0;
-  height: 70vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background: url("https://images.squarespace-cdn.com/content/v1/5ccc970f7046802e565771ae/1559327414336-L88G7ZEDFKPNBZ88DDDK/ke17ZwdGBToddI8pDm48kDVEj010BbXsLnm509AHjVF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWiOgHWyWfC8BdxC_WuXfvhWFtDdzCpB3PJsO8_z2e5f_W3y_yy4MVWH39a9Q36QsA/SCB-COVER-BARS.jpg?format=2500w"); 
-  background-size: contain;
-  overflow: scroll;
- }
- 
- .ingBtnDisplay::-webkit-scrollbar {
-  display: none;
- }
- 
- .ingButtons{
-  /*border: 2px solid red; */
-  position: relative;
-  z-index: 1;
-  height: 87%;
-  width: 80vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
- }
- 
- #btnDisplayTitles{
-  /*border: 2px solid red;*/
-  border-bottom: 2px solid rgb(44,47,56);
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 13%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  padding: 2% 0 2% 0;
-  background-color: black;
-  color: white;
-  text-decoration: underline;
-  text-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
-  position: -webkit-sticky;
-  position: sticky;
- }
- 
- #titleLiquor,#titleLiqueur,#titleMixers,#titleGarnish{
-  display: none;
- }
- 
- .allButtonStyle{
-  font-size: 2vh;
-  border-radius: 10% ;
-  border: 2px solid dark grey;
-  background-color: black;
-  opacity: 0.87;
-  color: white;
- }
- 
- #glassBtnContainer{
-  /*border: 2px solid red;*/
-  position: absolute;
-  top: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- 
- .ingBtnGlass{
-  width: 6vw;
-  height: 12vh;
-  margin: 5px;
- }
- 
- .ingBtnLiquor{
-  display: none;
-  position: relative;
-  top: 5%;
-  width: 10vw;
-  height: 15vh;
-  margin: 5px;
- }
- 
- #liqueurBtnContainer{   /* still trys to scroll */
-  /*border: 2px solid red;*/
-  position: absolute;
-  top: 15%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
- }
- 
- .ingBtnLiqueur{
-  display: none;
-  width: 10vw;
-  height: 15vh;
-  margin: 5px;
- }
- 
- .ingBtnMixers{
-  display: none;
-  width: 12vw;
-  height: 15vh;
-  margin: 5px;
- }
- 
- #garnishBtnContainer{
-  /*border: 2px solid red;*/
-  position: absolute;
-  top: 10%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
- }
- 
- .ingBtnGarnish{
-  display: none;
-  width: 9vw;
-  height: 13vh;
-  margin: 5px;
- }
- 
- .footer {
-  /*grid-area: footer;*/
-  height: 15vh;
-  width: 100vw;
-  display: flex;
-  background:url("http://wallpapercave.com/wp/9OsQHDB.jpg"); 
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid black;
- }
- 
- .footerButtons {
-  width: 7vw;
-  height: 10vh;
-  margin: 10px;
-  padding: 5px 5px;
-  border: 2px solid dark grey;
-  background-color: black;
-  opacity: 0.87;
-  color: white;
-  font-size: .8em;
-  border-radius: 12.5%;
- }
- 
- #ingBtnLiquorNone,#ingBtnLiqueurNone,#ingBtnMixersNone,#ingBtnGarnishNone,#ingBtnLiquorNext,#ingBtnLiqueurNext,#ingBtnMixersNext,#liquorBackButton,#liqueurBackButton,#mixersBackButton,#garnishBackButton,#deleteButton,#deleteButton2,#deleteButton3,#clearButton,#ingDisplayLiquor2,#ingDisMix2,#ingDisMix3,#ingDisMix4,#ingDisGar2{
-  display: none;
- }
- 
- 
- 
- 
- 
- 
- 
- /* The Modal (background) .....................................................*/
- #myModal, #myModalDrinkList, #myMixerModal{
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
- }
- 
- /* Modal Content/Box */
- .modal-content, #mixerModalContent{
-  background-color: black;
-  color: white;
-  font-size: 25px;
-  margin: 2% auto; /* 5% from the top and centered */
-  padding: 10px;
-  border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
-  height: auto;
- }
- 
- .previous {
-  display: none;
-  margin-left: 2%;
-  color: #aaa;
-  float: left;
-  font-size: 14px;
-  cursor: pointer;
- }
- 
- #closeHeader, #closeDrinkListHeader, #closeMixer{
-  /*border: 2px solid red;*/
-  height: 2.5vh;
- }
- 
- /* The Close Button */
- .close{
-  display: flex;
-  position: relative;
-  float: right;
-  top: -20%;
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
- }
- 
- .close:hover,
- .close:focus,
- .previous:hover,
- .previous:focus{
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
- }
- 
- #imageDiv{
-  /*border: 2px solid red;*/
-  display: flex;
-  justify-content: center;
-  margin-left: 2.5%;
- }
- 
- #modalImage {
-  border: 1px inset white;
-  margin-top: 5%;
-  width: 40vw;
-  height: auto;
-  padding: 5%;
- }
- 
- #textDiv{
-  /*border: 2px solid red;*/
-  height: 15vh;
- }
- 
- #drinkListTitleDiv{
-  /*border: 2px solid red;*/
- padding-bottom: 2.5%;
- }
- 
- #drinkListDrinkNames{
-  /*border: 2px solid red;*/
-  padding: 5%;
-  font-size: 5vh;
-  padding-top: 0;
-  padding-bottom: 2%;
- }
- 
- #recipeDiv{
-  padding-bottom: 2%;
-  font-size: 3vh;
- }
- 
- #modalText, #modalTextDrinkList{
-  display: block;
-  position: relative;
-  top: 20%;
-  text-align: center;
- }
- 
- #modalTextDrinkList {
-  text-decoration: underline;
-  text-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
- }
- 
- #drinkListItems{
-  display: flex;
-  justify-content: center;
-  font-size: 3vh;
- }
- 
- #AFB:hover,#AFB:focus,#AM:hover,#AM:focus,#BS:hover,#BS:focus,#BOS:hover,#BOS:focus,#CARA:hover,#CARA:focus,#CHUR:hover,#CHUR:focus,#COCO:hover,#COCO:focus,#CUCUM:hover,#CUCUM:focus,#DROP:hover,#DROP:focus,#EM:hover,#EM:focus,#FGP:hover,#FGP:focus,#FGPFB:hover,#FGPFB:focus,#JG:hover,#JG:focus,#MAS:hover,#MAS:focus,#MBD:hover,#MBD:focus,#MICH:hover,#MICH:focus,#NAT:hover,#NAT:focus,#OOF:hover,#OOF:focus,#PM:hover,#PM:focus,#PAL:hover,#PAL:focus,#PPM:hover,#PPM:focus,#SANG:hover,#SANG:focus,#SO:hover,#SO:focus,#SBF:hover,#SBF:focus,#TNT:hover,#TNT:focus,#TNTRR:hover,#TNTRR:focus,#TNTRRFB:hover,#TNTRRFB:focus,#TROPM:hover,#TROPM:focus 
- {
-   color: rgb(160,160,160);
-   text-decoration: none;
-   cursor: pointer;
- }
- 
- #AFBrecipeTitle,#AMrecipeTitle,#BSrecipeTitle,#BOSrecipeTitle,#CARArecipeTitle,#CHURrecipeTitle,#COCOrecipeTitle,#CUCUMrecipeTitle,#DROPrecipeTitle,#EMrecipeTitle,#FGPrecipeTitle,#FGPFBrecipeTitle,#JGrecipeTitle,#MASrecipeTitle,#MBDrecipeTitle,#MICHrecipeTitle,#NATrecipeTitle,#OOFrecipeTitle,#PMrecipeTitle,#PALrecipeTitle,#PPMrecipeTitle,#SANGrecipeTitle,#SOrecipeTitle,#SBFrecipeTitle,#TNTrecipeTitle,#TNTRRrecipeTitle,#TNTRRFBrecipeTitle,#TROPMrecipeTitle {
-  font-size: 3vh;
-  /*margin-top: 5%;*/
- }
- 
- #AFBrecipe,#AFBrecipeTitle,#AMrecipe,#AMrecipeTitle,#BSrecipe,#BSrecipeTitle,#BOSrecipe,#BOSrecipeTitle,#CARArecipe,#CARArecipeTitle,#CHURrecipe,#CHURrecipeTitle,#COCOrecipe,#COCOrecipeTitle,#CUCUMrecipe,#CUCUMrecipeTitle,#DROPrecipe,#DROPrecipeTitle,#EMrecipe,#EMrecipeTitle,#FGPrecipe,#FGPrecipeTitle,#FGPFBrecipe,#FGPFBrecipeTitle,#JGrecipe,#JGrecipeTitle,#MASrecipe,#MASrecipeTitle,#MBDrecipe,#MBDrecipeTitle,#MICHrecipe,#MICHrecipeTitle,#NATrecipe,#NATrecipeTitle,#OOFrecipe,#OOFrecipeTitle,#PMrecipe,#PMrecipeTitle,#PALrecipe,#PALrecipeTitle,#PPMrecipe,#PPMrecipeTitle,#SANGrecipe,#SANGrecipeTitle,#SOrecipe,#SOrecipeTitle,#SBFrecipe,#SBFrecipeTitle,#TNTrecipe,#TNTrecipeTitle,#TNTRRrecipe,#TNTRRrecipeTitle,#TNTRRFBrecipe,#TNTRRFBrecipeTitle,#TROPMrecipe,#TROPMrecipeTitle {
-  display: none;
-  justify-content: center;
-  font-size: 3vh;
- }
- 
- .drinkListNames {
-  margin: 0px 50px 0px 50px;
- }
- 
- #mixerTitle {
-  position: relative;
-  top: 2%;
-  left: 1.25%;
-  /*border: 2px solid red;*/
-  margin-bottom: 2%;
-  text-align: center;
-  text-decoration: underline;
-  text-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
- }
- 
- #ingredientsDisplay{
-  /*border: 2px solid red;*/
-  position: relative;
-  top: 1%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: auto;
- }
- 
- .mixerIngredients{
-  position: relative;
- }
- 
- .ingredients {
-  position: relative;
-  width: 60%;
-  margin-bottom: 10px;
-  padding: 1%;
-  border: 1px solid white;
-  text-align: center;
-  font-size: 3vh;
-  font-weight: normal;
- }
- 
- 
- #tntLogo{
-  position: relative;
-  width: 6vw;
-  left: -1%;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
- }
- 
- 
- #menu{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  right: -1%;
-  text-align: center;
-  color: white;
-  font-size: 3.5vh;
-  text-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
-  cursor: pointer;
- }
- 
- 
- 
-   /***********************************************************************************************************************************************************************/
-   
-   @media (max-width: 1024px){ 
-    
-  /* Header */
-  
-    #tntLogo, #menu{
-      display: none;
-    }
-  
-    #tntLogo2{
-      position: fixed;
-      opacity: 1;
-      height: 40vh;
-    }
-    
-    .orderDisplay {
-     grid-area: ordDis;
-     height: 20vh;
-     border: 2px solid black;
-     background: url("http://wallpapercave.com/wp/9OsQHDB.jpg");
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-     position: -webkit-sticky;
-     position: sticky;
-     top: 0;
-    }
-    
-    .orderDisplayButtons {
-     padding: 1vh;
-     width: 18vw;
-     height: 9vh;
-     border: 2px solid dark grey;
-     background-color: black;
-     opacity: 0.87;
-     color: white;
-     font-size: 1.8vh;
-     justify-content: center;
-     position: relative;
-     top: -3vh;
-    }
-    
-    #orderDisplayText {
-     width: 90vw;
-     border: 2px solid black;
-     background: white;
-     text-align: center;
-     font-size: 2vh;
-     position: fixed;
-     top: 25vw;
-    }
-    
-  
-  /* Body */
-  
-  
-  #btnDisplayTitles{
-    /*border: 2px solid red;*/
-    border-bottom: 2px solid rgb(44,47,56);
-    top: 0;
-    width: 100vw;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -5;
-    padding: 2% 0 2% 0;
-    background-color: black;
-    color: white;
-    text-decoration: underline;
-    text-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
-    font-size: 2vh;
-    position: -webkit-sticky;
-    position: sticky;
-   }
-  
-  
-    .ingBtnDisplay {
-     height: 60vh;
-     background: black; 
-     background-size: cover;
-     /*overflow: scroll;*/
-   }
-  
-   .ingButtons{
-    /*border: 2px solid red; */
-    position: relative;
-    z-index: 1;
-    height: 59vh;
-    width: 95vw;
-   }
-  
-   .allButtonStyle{
-    width: 18vw;
-    height: 9vh; 
-    font-size: 1.5vh;
-    border-radius: 10% ;
-    border: 2px solid dark grey;
-    background-color: black;
-    opacity: 0.87;
-    color: white;
-   }
-  
-   #glassBtnContainer{
-    /*border: 2px solid red;*/
-    position: absolute;
-    top: 0vh;
-    height: 35vh;
-    width: 95vw;
-    display: flex;
-    flex-wrap: wrap;
-   }
-   
-    
-    .ingBtnGlass{
-     width: 21vw;
-     height: 10.5vh;
-     font-size: 1.8vh;
-     border-radius: 10%;
-     border: 2px solid dark grey;
-     padding: 5px 5px;
-     background-color: black;
-     opacity: 0.87;
-     color: white;
-    }
-  
-    .ingBtnLiquor{
-      display: none;
-      position: relative;
-      top: -.1vh;
-      width: 21vw;
-      height: 10.5vh;
-      margin: 5px;
-    }
-   
-    .ingBtnLiqueur{
-      display: none;
-      position: relative;
-      top: -9vh;
-      width: 21vw;
-      height: 10.5vh;
-      margin: 5px;
-    } 
-
-    .ingBtnMixers{
-      display: none;
-      position: relative;
-      top: vh;
-      width: 21vw;
-      height: 10.5vh;
-      margin: 5px;  
-    }
-
-    .ingBtnGarnish{
-      display: none;
-      position: relative;
-      top: -6vh;
-      width: 21vw;
-      height: 10.5vh;
-      margin: 5px;
-    }
-    
-    /* Footer */
-    
-    .footer{
-     height: 14vh;
-     width: 100vw;
-     display: flex;
-     background:url("http://wallpapercave.com/wp/9OsQHDB.jpg"); 
-     align-items: center;
-     justify-content: center;
-     border-top: 2px solid black;
-   }
-  
-  
-   .footerButtons {
-    width: 17vw;
-    height: 8.5vh;
-    margin: 4px;
-    padding: 5px 5px;
-    border: 2px solid dark grey;
-    background-color: black;
-    opacity: 0.87;
-    color: white;
-    font-size: 1.5vh;
-    border-radius: 12.5%;
-   } 
-  
-  
-   /* Result Modal */
-  
-   #myModal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 5; /* Sit on top */
-    left: 0;
-    top: 0;
-    padding-top: 15vh;
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-   }
-   
-   /* Modal Content/Box */
-   .modal-content{
-    background-color: black;
-    color: white;
-    font-size: 25px;
-    margin: 2% auto; /* 5% from the top and centered */
-    padding: 10px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height: 85%;
-   }
-  
-   #modalImage, #modalImage2{
-    border: 1px inset white;
-    margin-top: 5%;
-    margin-left: 4%;
-    width: 70vw;
-    height: auto;
-    padding: 5%;
-   }
-  
-   /* Drink List Modal */
-  
-   .previous {
+::-webkit-scrollbar {
     display: none;
-    margin-top: 2%;
-    color: #aaa;
-    float: left;
-    font-size: 2.2vh;
-    cursor: pointer;
-   }
+  }
   
-   #modalImage2{
-     margin-right: 7%;
-   }
-  
-   #modalImage2{
-     width: 70vw;
-   }
-  
-   .modal-content2{
-    background-color: black;
-    color: white;
-    font-size: 2.5vh;
-    margin: 7% auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
-    height: 95%;
-   }
-   
-   #modalTextDrinkList{
-     padding-left: 5vw;
-   }
-  
-   #drinkListItems{
-     font-size: 1.8vh;
-   }
-  
-   #recipeTitleDiv,#AFBrecipeTitle,#AMrecipeTitle,#BSrecipeTitle,#BOSrecipeTitle,#CARArecipeTitle,#CHURrecipeTitle,#COCOrecipeTitle,#CUCUMrecipeTitle,#DROPrecipeTitle,#EMrecipeTitle,#FGPrecipeTitle,#FGPFBrecipeTitle,#JGrecipeTitle,#MASrecipeTitle,#MBDrecipeTitle,#MICHrecipeTitle,#NATrecipeTitle,#OOFrecipeTitle,#PMrecipeTitle,#PALrecipeTitle,#PPMrecipeTitle,#SANGrecipeTitle,#SOrecipeTitle,#SBFrecipeTitle,#TNTrecipeTitle,#TNTRRrecipeTitle,#TNTRRFBrecipeTitle,#TROPMrecipeTitle {
-    /* border: 2px solid red;*/
-    font-size: 2.75vh;
-    padding-left: 1%;
-    padding-top: 10vh;
-   }
+body {
+    font-size: 14px;
+    background-image: url("https://anyvoo.com/wp-content/uploads/2020/04/Old-School-Wood-Plank-Video-Conference-Background-Design-Full-Image-No-Logo.jpg");
+  }
 
-   #FGPFBrecipeTitle, #TNTRRFBrecipeTitle, #AFBrecipeTitle{
-     text-align: center;
-   }
-  
-   #recipeIngredientDiv,#AFBrecipe,#AMrecipe,#BSrecipe,#BOSrecipe,#CARArecipe,#CHURrecipe,#COCOrecipe,#CUCUMrecipe,#DROPrecipe,#EMrecipe,#FGPrecipe,#FGPFBrecipe,#JGrecipe,#MASrecipe,#MBDrecipe,#MICHrecipe,#NATrecipe,#OOFrecipe,#PMrecipe,#PALrecipe,#PPMrecipe,#SANGrecipe,#SOrecipe,#SBFrecipe,#TNTrecipe,#TNTRRrecipe,#TNTRRFBrecipe,#TROPMrecipe{
-     font-size: 2vh;
-     padding: 3vw;
-     height: 50vh;
-   }
-  
-   /* Mixer Modal */
-  
-   #mixerModalContent{
-     margin-top: 5%;
-     height: 95vh;
-     width: 90vw;
-   }
-   
-   #ingredientsDisplay{
-    /*border: 2px solid red;*/
-    position: relative;
-    top: 1%;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: auto;
-   }
-   
-   .mixerIngredients{
-    position: relative;
-   }
-   
-   .ingredients {
-    position: relative;
-    width: 60%;
-    margin-bottom: 10px;
-    padding: 1%;
-    border: 1px solid white;
-    text-align: center;
-    font-size: 2vh;
-    font-weight: normal;
-   }
-  
-   #ingDisplayContainer{
-    border: 1px inset white;
-    height: 80vh;
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: auto;
-   }
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+    .all-buttons{
+        margin: 2%;
+        width: 9vw;
+        height: 13vh;
+        border-radius: 12.5%;
+        border: 4px inset rgb(14, 14, 14);
+        box-shadow: 1px 1px 5px rgb(88, 88, 88), 0 0 5px rgb(88, 88, 88), 0 0 5px rgb(88, 88, 88);
+        color: white;
+        background-color: rgb(39, 39, 39);
+        font-size: 2.5vh;
+        cursor: pointer;
+      }
+
+    #gridContainer{
+        display: grid;
+        margin: .5% 2%;
+        justify-content: center;
+    }
+
+    .grid-item {
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .item1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .nav-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .nav-buttons{
+        position: relative;
+        border: 4px outset rgb(122, 113, 113);
+        margin: 0% 2% 0% 2%;
+        width: 10vw;
+        height: 7vh;
+        font-size: 2vh;
+        background-color: black;
+        color: white;
+      }
+      
+    .nav-buttons:focus{
+        outline: none;
+      }
+
+    /* button container */  
+    .item2 {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        height: 60vh;
+        width: 85vw;
+        border: 4px outset rgb(122, 113, 113);
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        overflow: scroll;
+     }
+
+    .button-container{
+        margin: auto;
+        height: 65vh;
+        width: 87vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        column-gap: 4vw;
+        row-gap: 5vh;
+        overflow: scroll;
+    }
+
+    .item3 {
+        display: none;
+        width: 25%;
+        height: 85%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #drinkPhoto{
+        border: 2px inset rgb(122, 113, 113, .8);
+        max-width: 98%;
+        height: auto;
+      }
+
+    #drinkName{
+        padding-top: 4%;
+    }  
+
+    .item4 {
+        display: none;
+        width: 65%;
+        height: 85%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .recipe-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        column-gap: 2vw;
+        height: 100%;
+        font-size: .7em;
+    }
+
+    #glass{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #glass-recipe{
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    #liquor{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #liquor-recipe{
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    #liqueur{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #liqueur-recipe{
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
+
+    #mixers{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #mixers-recipe{
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
+
+    #garnish{
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #garnish-recipe{
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+
+
+
+    .item5 {
+        padding: 2% 0 0 0;
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #modeSwitchButton{
+        height: 10vh;
+        width: 80vw;
+        font-size: 4.5vh;
+    }
+
+}
