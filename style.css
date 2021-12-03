@@ -92,9 +92,23 @@ body {
         outline: none;
       }
 
-    .frozen-buttons, .specialty-buttons, .fishbowl-buttons, .dessert-buttons, .other-buttons{
+    .frozen-buttons, .specialty-buttons, .fishbowl-buttons, .dessert-buttons, .other-buttons, .form-container, .results-container{
         display: none;
     }  
+
+    /* search container */
+    .form-container, .results-container{
+        position: absolute;
+        margin: auto;
+        width: 85%;
+    }
+
+    #search{
+        width: 50%;
+        height: auto;
+        padding: 1.5vh 10vw 1.5vh 1.5vw;
+        font-size: large;
+    }
 
     /* button container */  
     .item2 {

@@ -70,6 +70,7 @@ class Drink{
        tntRumRunnerFB,
        tropicalMargarita,
       ];
+      
 
 $(document).ready(function(){
 
@@ -106,10 +107,15 @@ $(document).ready(function(){
        "tropicalMargarita"
     ]
     */
+
+
     
-    /* Margarita Buttons */
+    
+    /* All Buttons */
     $(".all-buttons").click(function(){
         $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".results-container").hide();
         $(".item3").fadeIn(200);
         $(".item4").fadeIn(200);
 
@@ -212,6 +218,8 @@ $(document).ready(function(){
         $("#garnishRecipe3").hide();
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".results-container").hide();
         $(".margarita-buttons").fadeIn(200);
         $(".button-container").show();
     });
@@ -229,6 +237,8 @@ $(document).ready(function(){
         $("#garnishRecipe3").hide();
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".results-container").hide();
         $(".frozen-buttons").fadeIn(200);
         $(".button-container").show();
     });
@@ -246,6 +256,8 @@ $(document).ready(function(){
         $("#garnishRecipe3").hide();
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".results-container").hide();
         $(".specialty-buttons").fadeIn(200);
         $(".button-container").show();
     });
@@ -262,7 +274,8 @@ $(document).ready(function(){
         $("#garnishRecipe2").hide();
         $("#garnishRecipe3").hide();
         $("#garnishRecipe4").hide();
-        $(".all-buttons").hide();
+        $(".all-buttons").hide();        $(".form-container").hide();
+        $(".results-container").hide();
         $(".fishbowl-buttons").fadeIn(200);
         $(".button-container").show();
     });
@@ -280,6 +293,8 @@ $(document).ready(function(){
         $("#garnishRecipe3").hide();
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".results-container").hide();
         $(".dessert-buttons").fadeIn(200);
         $(".button-container").show();
     });
@@ -298,6 +313,8 @@ $(document).ready(function(){
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
         $(".other-buttons").fadeIn(200);
+        $(".form-container").show();
+        $(".results-container").show();
         $(".button-container").show();
     });
 
