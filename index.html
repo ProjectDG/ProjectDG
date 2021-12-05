@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<title>T&T Kitchen App</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="./style.css">
+
+<style>
+</style>
+
+<body>
+    <div id="portraitContainer">
+        <h1>Please rotate screen</h1>
+        <img id="rotateScreenIcon" src="./images/rotateScreenIcon.png" alt="rotate screen icon">
+    </div>
+
+
+
+
+
+    <div id="gridContainer">
+        <div class="grid-item item1">
+            <div class="nav-container">
+                <button class="nav-buttons" id="navMargarita">Margaritas</button>
+                <button class="nav-buttons" id="navFrozen">Frozen Drinks</button>
+                <button class="nav-buttons" id="navSpecialty">Specialty Drinks</button>
+                <button class="nav-buttons" id="navFishBowls">Fish Bowls</button>
+                <button class="nav-buttons" id="navDessert">Dessert Drinks</button>
+                <button class="nav-buttons" id="navOther">Other Drinks</button>
+            </div>
+        </div>
+
+        <div class="grid-item item2">
+            <div class="form-container">
+                <form class="form">
+                    <input id="search" type="text" class="input" placeholder="search..."/>
+                    <!--<button id="submit" class="submit-button" type="submit">search</button>-->
+                    <button id="clear" class="clear-results nav-buttons">clear</button>
+                </form>
+            </div>
+            <div class="results-container">
+                <ul class="results-list" id="list">
+                </ul>
+            </div>
+            <div class="button-container">
+                <!-- Margarita Buttons-->
+                <button class="all-buttons margarita-buttons" id="bloodOrangeAndSage" value="Blood Orange and Sage">Blood Orange<br>and<br>Sage</button>
+                <button class="all-buttons margarita-buttons" id="cucumberita" value="CucumbeRita">Cucumberita</button>
+                <button class="all-buttons margarita-buttons" id="dropItLikeItsHot" value="Drop It LIke It's Hot">Drop It<br>Like It's Hot</button>
+                <button class="all-buttons margarita-buttons" id="masterita" value="Maserita">Maserita</button>
+                <button class="all-buttons margarita-buttons" id="naturita" value="Naturita">Naturita</button>
+                <button class="all-buttons margarita-buttons" id="skinnyOrganic" value="Skinny Organic">Skinny<br>Organic</button>
+                <button class="all-buttons margarita-buttons" id="tntRita" value="T&T Rita">T&T Rita</button>
+                <button class="all-buttons margarita-buttons" id="tropicalMargarita" value="Tropical Margarita">Tropical<br>Margarita</button>
+
+
+                <!-- Frozen Buttons-->
+                <button class="all-buttons frozen-buttons" id="avocadoMargarita" value="Avocado Margarita">Avocado<br>Margarita</button>
+                <button class="all-buttons frozen-buttons" id="cocorita" value="CocoRita">CocoRita</button>
+                <button class="all-buttons frozen-buttons" id="pricklyPear" value="Prickly Pear Margarita">Prickly Pear</button>
+
+                <!-- Specialty Buttons-->
+                <button class="all-buttons specialty-buttons" id="churchill" value="Churchill">Churchill</button>
+                <button class="all-buttons specialty-buttons" id="floridaGrovePunch" value="Florida Grove Punch">Florida Grove Punch</button>
+                <button class="all-buttons specialty-buttons" id="jaliscoGardens" value="Jalisco Gardens">Jalisco<br>Gardens</button>
+                <button class="all-buttons specialty-buttons" id="oaxacanOldFashioned" value="Oaxacan Old Fashioned">Oaxacan Old Fashioned</button>
+                <button class="all-buttons specialty-buttons" id="pacificMule" value="Pacific Mule">Pacific Mule</button>
+                <button class="all-buttons specialty-buttons" id="paloma" value="Paloma">Paloma</button>
+                <button class="all-buttons specialty-buttons" id="spicyBerryFresca" value="Spicy Berry Fresca">Spicy Berry<br>Fresca</button>
+                <button class="all-buttons specialty-buttons" id="tntRumRunner" value="T&T Rum Runner">T&T<br>Rum Runner</button>
+
+                <!-- FishBowl Buttons-->
+                <button class="all-buttons fishbowl-buttons" id="aldoronaFishBowl" value="Aldorona (Fish Bowl)">Aldorona<br>Fish Bowl</button>
+                <button class="all-buttons fishbowl-buttons" id="floridaGrovePunchFishBowl" value="Florida Grove Punch (Fish Bowl)">Florida Grove Punch Fish Bowl</button>
+                <button class="all-buttons fishbowl-buttons" id="tntRumRunnerFishBowl" value="T&T Rum Runner (Fish Bowl)">T&T Rum Runner Fish Bowl</button>
+
+                <!-- Dessert Buttons-->
+                <button class="all-buttons dessert-buttons" id="babyStout" value="Baby Stout">Baby Stout</button>
+                <button class="all-buttons dessert-buttons" id="carajillo" value="Carajillo">Carajillo</button>
+                <button class="all-buttons dessert-buttons" id="espressoMartini" value="Espresso Martini">Espresso<br>Martini</button>
+                <button class="all-buttons dessert-buttons" id="mexicanBullDog" value="Mexican Bull Dog">Mexican<br>Bull Dog</button>
+
+
+                <!-- Other Buttons-->
+                <button class="all-buttons other-buttons" id="michelada" value="Michelada">Michelada</button>
+                <button class="all-buttons other-buttons" id="sangria" value="Sangria">Sangria</button>
+
+
+
+
+
+                <div class="grid-item item3">
+                    <img id="drinkPhoto" src="" alt="current drink photo">
+                    <p class="drink-title" id="drinkTitle"></p>
+                </div>  
+    
+                <div class="grid-item item4">
+                    <div class="recipe-container">
+                        <p id="glass">Glass:</p>
+                        <p id="glassRecipe"></p>
+                        <p id="liquor">Liquor:</p>
+                        <p id="liquorRecipe"></p>
+                        <p id="liquorRecipe2"></p>
+                        <p id="liqueur">Liqueur:</p>
+                        <p id="liqueurRecipe"></p>
+                        <p id="mixers">Mixers:</p>
+                        <p id="mixersRecipe"></p>
+                        <p id="mixersRecipe2"></p>
+                        <p id="mixersRecipe3"></p>
+                        <p id="mixersRecipe4"></p>
+                        <p id="mixersRecipe5"></p>
+                        <p id="garnish">Garnish:</p>
+                        <p id="garnishRecipe"></p>
+                        <p id="garnishRecipe2"></p>
+                        <p id="garnishRecipe3"></p>
+                        <p id="garnishRecipe4"></p>
+                        
+                    </div>  
+                </div>
+            </div><!--end of button container-->
+
+
+
+
+
+
+
+
+
+        </div>
+        
+        <div class="grid-item item5">
+            <button class="nav-buttons" id="modeSwitchButton">Switch to Kitchen</button>
+        </div>
+    </div>
+    
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
