@@ -98,7 +98,7 @@ body {
         position: relative;
         border: 4px outset rgb(122, 113, 113);
         margin: 0% 2% 0% 2%;
-        width: 13vw;
+        width: 14vw;
         height: 12vh;
         font-size: 2.75vh;
         background-color: black;
@@ -377,7 +377,7 @@ body {
 
 
     .item5 {
-        padding: .5% 0 0 0;
+        padding: .25% 0 0 0;
         grid-column: 1 / span 2;
         grid-row: 4;
         background-color: rgba(0, 0, 0, 0);
