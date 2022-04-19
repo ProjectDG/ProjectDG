@@ -164,7 +164,7 @@ class Drink{
             list.appendChild(resultItem);
             $(".results-list").show();
 
-            $(".result-item").fadeIn(200);
+            $(".result-item").show()//.fadeIn(200);
             console.log(drink.name)  /* figure out to add this to the buttons value */
           }
 
@@ -215,8 +215,8 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".results-list").hide();
         $(".button-container").hide();
-        $(".item3").fadeIn(200);
-        $(".item4").fadeIn(200);
+        $(".item3").show()//.fadeIn(200);
+        $(".item4").show()//.fadeIn(200);
         $(".initialRecipe").show();
         $("#liqueurRecipe2").hide();
         $(".recipe-container").remove('#liquor');
@@ -609,7 +609,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
-        $(".margarita-buttons").fadeIn(200);
+        $(".margarita-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
 
@@ -628,7 +628,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
-        $(".frozen-buttons").fadeIn(200);
+        $(".frozen-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
 
@@ -647,7 +647,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
-        $(".specialty-buttons").fadeIn(200);
+        $(".specialty-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
 
@@ -666,7 +666,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();        
         $(".form-container").hide();
         $(".results-list").hide();
-        $(".fishbowl-buttons").fadeIn(200);
+        $(".fishbowl-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
 
@@ -685,7 +685,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
-        $(".dessert-buttons").fadeIn(200);
+        $(".dessert-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
 
@@ -703,7 +703,7 @@ $(document).ready(function(){
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
         $(".results-list").hide();
-        $(".other-buttons").fadeIn(200);
+        $(".other-buttons").show()//.fadeIn(200);
         $(".form-container").show();
         $(".button-container").show();
         searchInput.value = '';
@@ -723,7 +723,7 @@ $(document).ready(function(){
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
         $(".form-container").hide();
-        $(".batch-buttons").fadeIn(200);
+        $(".batch-buttons").show()//.fadeIn(200);
         $(".results-list").hide();
         $(".button-container").show();
     });
