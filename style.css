@@ -105,7 +105,7 @@ body {
         color: white;
       }
       
-    .nav-buttons:focus, .all-buttons{
+    .nav-buttons:focus, .all-buttons, #instructionsButton{
         outline: none;
       }
 
@@ -180,8 +180,9 @@ body {
     }
 
     #drinkPhoto{
+        background-color: black;
         border: 2px inset rgb(122, 113, 113, .8);
-        max-width: 98%;
+        max-width: 80%;
         height: auto;
         font-size: 2vh;
       }
@@ -190,7 +191,18 @@ body {
         display: none;
         padding: 1vh;
         font-size: 3vh;
-    }  
+    }
+
+    #instructionsButton{
+        position: relative;
+        border: 4px outset rgb(122, 113, 113);
+        margin: 4% 2% 0% 2%;
+        width: 20vw;
+        height: 5vh;
+        font-size: 2vh;
+        background-color: black;
+        color: white;
+    }
 
     .item4 {
         display: none;
