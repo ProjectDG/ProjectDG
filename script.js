@@ -55,7 +55,7 @@ class Drink{
    //  Batch Recipes
    let avocadoSourMixBatch = new Drink("Avocado Sour Mix (Batch)", null, null, null, null, ["Avocado (pre-packaged) 9 oz,", "Agave 12 oz,", "Lime Juice 12 oz,", "Pineapple Juice 12 oz"], null, "./images/logo.jpg", "Batch");
    let houseMargaritaBatch = new Drink("House Margarita (Batch)", null, null, ["Well Tequila White (2 Bottles),", "Well Tequila Gold (2 Bottles)"], ["Triple Sec (Half Bottle)"], ["Margarita Mix 2 Jugs,", "Water (Fill to 20 Liters)"], null, "./images/logo.jpg", "Batch");
-   let honeySyrupBatch = new Drink("Honey Syrup (Batch)", null, null, null, null, ["Honey 2 parts,", "Hot Water 1 part"], null, "./images/logo.jpg", "Batch");
+   let honeySyrupBatch = new Drink("Honey Syrup (Batch)", null, null, null, null, ["Honey 2 parts,", "Hot Water 1 part"], null, "./images/logo.jpg", "")
    let margMixFrozenBatch = new Drink("Margarita Mix(Frozen / Batch)", null, null, null, null, ["Half Margarita Mix,","Half Water"], null, "./images/logo.jpg", "Batch");
    let sangriaBatch = new Drink("Sangria (Batch)", null, null, ["Franzia Wine (3 Boxes)"], ["Blackberry Brandy (1/2 Bottle),", "Peach Schnapps (1/2 Bottle)"], ["Lime Juice (12 oz),", "Orange Juice (1/2 Gallon),", "Sugar (1 Cup)"], null, "./images/logo.jpg", "Batch");
 
