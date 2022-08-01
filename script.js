@@ -27,7 +27,7 @@ class Drink{
    let espressoMartini = new Drink("Espresso Martini", "Coupe Glass", null, ["Don Julio Reposado 1 oz"], ["Ancho Reyes Chili Liqueur 1 oz"], ["Chocolate Bitters (4 Dashes),", "Espresso 3 oz,", "Vanilla 1 oz"], ["Orange Peel"],"./images/logo.jpg", null);
    let floridaGrovePunch = new Drink("Florida Grove Punch", "Pineapple Glass", "Tajin Chile Lime Salt", ["Pueblo Viejo Blanco 1.5 oz"], null, ["Agave .75 oz,", "Cucumber (3 Slices Muddled),", "Lime Juice .5 oz,", "Watermelon Juice 1.5 oz"], ["Pineapple Wedge and Leaf"],"./images/floridaGrovePunch.jpg", null);
    let floridaGrovePunchFB = new Drink("Florida Grove Punch (Fish Bowl)", "Fish Bowl", "Tajin Chile Lime Salt", ["Pueblo Viejo Blanco 6 oz"], null, ["Agave 2.25 oz,", "Cucumber (6 Slices Muddled),", "Lime Juice 1.5 oz,", "Watermelon Juice 6 oz"], ["Pineapple Wedge and Leaf"],"./images/logo.jpg", null);
-   let floridaSunset = new Drink("Florida Sunset", "Rocks Glass", "Sugar", ["Bacardi Limon 1.5 oz"], ["Peach Schnapps .5 oz"], ["Agave .5 oz,", "Grenadine .5 oz,", "Lime Juice .5"], ["Orange and Cherry (Flag)"],"./images/logo.jpg", null);
+   let floridaSunset = new Drink("Florida Sunset", "Rocks Glass", "Sugar", ["Bacardi Limon 1.5 oz"], ["Peach Schnapps .5 oz"], ["Agave .5 oz,", "Grenadine .5 oz,", "Lime Juice .5"], ["Orange and Cherry (Flag)"],"./images/floridaSunset.jpg", null);
    let houseMargaritaFrozen = new Drink ("House Margarita (Frozen)", "Mason Jar", "Guest Choice", ["Gold Tequila 1 oz,", "White Tequila 1 oz"], ["Triple Sec .5 oz"], ["Margarita Mix 2 oz,", "One Healthy Scoop of Ice"], ["Lime"],"./images/logo.jpg", null);
    //let jaliscoGardens = new Drink("Jalisco Gardens", "Rocks Glass", "Tajin Chile Lime Salt", ["Volcan Blanco 1.5 oz"], ["Ancho Reyes Verde Liqueur .5 oz"], ["Agave .75 oz,", "Lime Juice .75 oz,", "Tomatillo (1 Quarter Muddled)"], ["Lime Wheel"],"./images/logo.jpg", null);
    let juanCollins = new Drink("Juan Collins", "Rocks Glass", null, ["El Jimador Reposado 1.5 oz"], null, ["Agave .5 oz,", "Lemon Juice .5 oz,", "Topo Chico"], ["Lemon Twist"], "./images/juanCollins.jpg", null)
@@ -60,7 +60,7 @@ class Drink{
    let avocadoSourMixBatch = new Drink("Avocado Sour Mix (Batch)", null, null, null, null, ["Avocado (pre-packaged) 9 oz,", "Agave 12 oz,", "Lime Juice 12 oz,", "Pineapple Juice 12 oz"], null, "./images/logo.jpg", "Batch");
    let honeySyrupBatch = new Drink("Honey Syrup (Batch)", null, null, null, null, ["Honey 2 parts,", "Hot Water 1 part"], null, "./images/logo.jpg", "")
    let houseMargaritaBatch = new Drink("House Margarita (Batch)", null, null, ["Well Tequila White (2 Bottles),", "Well Tequila Gold (2 Bottles)"], ["Triple Sec (Half Bottle)"], ["Margarita Mix 2 Jugs,", "Water (Fill to 20 Liters)"], null, "./images/logo.jpg", "Batch");
-   let margMixFrozenBatch = new Drink("Margarita Mix (Frozen / Batch)", "Storm Pourer", null, null, null, ["Half Margarita Mix,", "Half Water"], null, "./images/logo.jpg", "");
+   let margMixFrozenBatch = new Drink("Margarita Mix (Frozen / Batch)", null, null, null, null, ["Half Margarita Mix,", "Half Water"], null, "./images/logo.jpg", "");
    let sangriaBatch = new Drink("Sangria (Batch)", null, null, ["Franzia Wine (3 Boxes)"], ["Blackberry Brandy (1/2 Bottle),", "Peach Schnapps (1/2 Bottle)"], ["Lime Juice (12 oz),", "Orange Juice (1/2 Gallon),", "Sugar (1 Cup)"], null, "./images/logo.jpg", "Batch");
 
 
