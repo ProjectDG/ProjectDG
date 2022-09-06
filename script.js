@@ -45,7 +45,7 @@ class Drink{
    let skinnyOrganic = new Drink("Skinny Organic", "Hurricane Glass", "Guest Choice", ["Azunia Blanco 2 oz"], null, ["Agave 1 oz,", "Lime Juice 1 oz"], ["Lime"],"./images/skinnyMargarita.jpg", null);
    //let spicyBerryFresca = new Drink("Spicy Berry Fresca", "Rocks Glass", null, ["Dulce Vida Pineapple Jalapeno 1.5 oz"], null, ["Grapefruit Soda 3 oz,", "Jalapeno (1 Slice Muddled),", "Lime Juice .5 oz,", "Strawberry Puree .75 oz"], ["Jalapeno (Slice),", "Strawberry (Slice)"],"./images/logo.jpg", null);
    let spicyWatermelonMargarita = new Drink("Spicy Watermelon Margarita", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Habanero 2 oz"], null, ["Agave .75 oz,", "Lime Juice .5 oz,", "Watermelon Juice 1.5 oz"], ["Watermelon Chunks Covered in Tajin"], "./images/spicyWatermelonMargarita.jpg", null)
-   let tequilaSour = new Drink("Tequila Sour", "Coupe Glass", null, ["Tanteo Chipotle 2 oz"], null, ["Agave .75 oz,", "Egg Whites 1.5 oz,", "Lime Juice 1.25 oz"], ["Angostura Bitters (Stencil),", "Lime Twist"], "./images/logo.jpg", null)
+   //let tequilaSour = new Drink("Tequila Sour", "Coupe Glass", null, ["Tanteo Chipotle 2 oz"], null, ["Agave .75 oz,", "Egg Whites 1.5 oz,", "Lime Juice 1.25 oz"], ["Angostura Bitters (Stencil),", "Lime Twist"], "./images/logo.jpg", null)
    let tntRita = new Drink("T&T Rita", "Mason Jar", "Guest Choice", ["El Jimador 2 oz"], ["Combier Orange .75 oz"], ["Agave .5 oz,", "Lime Juice 1.5 oz"], ["Lime"],"./images/tntMargarita.jpg", null);
    let tntRumRunner = new Drink("T&T Rum Runner", "Pineapple Glass", null, ["Papas Pilar Anejo 1.25 oz,", "Club Caribe Banana Rum 1 oz"], null,["Guava Puree .5 oz,", "Lime Juice 1 oz,", "Pineapple Juice 1 oz"], ["Dark Rum (Float) if Ordered,", "Pineapple Wedge and Leaf"],"./images/tntRumRunner.jpg", null);
    let tntRumRunnerFB = new Drink("T&T Rum Runner (Fish Bowl)", "Fish Bowl", null, ["Papas Pilar Anejo 3.75 oz,", "Club Caribe Banana Rum 3 oz"], null, ["Guava Puree 1.5 oz,", "Lime Juice 2.25 oz,", "Pineapple Juice 2.25 oz"], ["Dark Rum (Float) if Ordered,", "Pineapple Wedge and Leaf"],"./images/logo.jpg", null);
@@ -108,7 +108,7 @@ class Drink{
        //spicyBerryFresca,
        specialMargarita,
        spicyWatermelonMargarita,
-       tequilaSour,
+       //tequilaSour,
        tntMojito,
        tntRita,
        tntRumRunner,
