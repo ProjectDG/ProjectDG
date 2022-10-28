@@ -450,8 +450,147 @@ $(document).ready(function(){
                         $("#liquor").text("Wine :");
                     }
                 } 
+/*
+                if(x["instructions"] === string){
+                    $(".item4").append('<p id="test"></p>'); //.................not working
+                    $("#test").show();
+                    $("#test").text(x["instructions"]);
+                }
+             
+               /* 
+                if(x["liquor"].length === 2){
+                    $("#liquorRecipe2").show();
+                    $("#liquorRecipe").text(x["liquor"][0]);
+                    $("#liquorRecipe2").text(x["liquor"][1]);
+                }
+                
+\
+                if(x["liqueur"] == null){                 
+                    $("#liqueur").hide();
+                    $("#liqueurRecipe").hide();
+                    $(".recipe-container").css( "grid-template-rows", "min-content 3vh min-content 3vh min-content min-content 0 min-content 3vh min-content min-content min-content min-content min-content 3vh min-content min-content min-content min-content" );
+                } else {
+                    $("#rim").show();
+                    $("#rimRecipe").show();
+                    $("#liqueur").show();
+                    $("#liqueurRecipe").show();
+                    $("#liqueurRecipe").text(x["liqueur"][0]);
+                    $(".recipe-container").css( "grid-template-rows", "min-content 3vh min-content 3vh min-content min-content 3vh min-content 3vh min-content min-content min-content min-content min-content 3vh min-content min-content min-content min-content" );
+                }
+                
+                if(x["mixers"].length === 1){
+                    $("#mixersRecipe").text(x["mixers"][0]);
+                } else if(x["mixers"].length === 2){
+                    $("#mixersRecipe2").show();
+                    $("#mixersRecipe").text(x["mixers"][0]);
+                    $("#mixersRecipe2").text(x["mixers"][1]);
+                } else if(x["mixers"].length === 3){
+                    $("#mixersRecipe2").show();
+                    $("#mixersRecipe3").show();
+                    $("#mixersRecipe").text(x["mixers"][0]);
+                    $("#mixersRecipe2").text(x["mixers"][1]);
+                    $("#mixersRecipe3").text(x["mixers"][2])
+                } else if(x["mixers"].length === 4){
+                    $("#mixersRecipe2").show();
+                    $("#mixersRecipe3").show();
+                    $("#mixersRecipe4").show();
+                    $("#mixersRecipe").text(x["mixers"][0]);
+                    $("#mixersRecipe2").text(x["mixers"][1]);
+                    $("#mixersRecipe3").text(x["mixers"][2]);
+                    $("#mixersRecipe4").text(x["mixers"][3]);
+                } else if(x["mixers"].length === 5){
+                    $("#mixersRecipe2").show();
+                    $("#mixersRecipe3").show();
+                    $("#mixersRecipe4").show();
+                    $("#mixersRecipe5").show();
+                    $("#mixersRecipe").text(x["mixers"][0]);
+                    $("#mixersRecipe2").text(x["mixers"][1]);
+                    $("#mixersRecipe3").text(x["mixers"][2]);
+                    $("#mixersRecipe4").text(x["mixers"][3]);
+                    $("#mixersRecipe5").text(x["mixers"][4]);
+                } /*
+                else if(x["mixers"] === null){
+                                                        // look into changing fromm displaying "None" to hiding if == null
+                }
+                */
+/*
+                if(x["garnish"].length === 1){
+                    $("#garnishRecipe").text(x["garnish"][0]);
+                } else if(x["garnish"].length === 2){
+                    $("#garnishRecipe2").show();
+                    $("#garnishRecipe").text(x["garnish"][0]);
+                    $("#garnishRecipe2").text(x["garnish"][1]);
+                } else if(x["garnish"].length === 3){
+                    $("#garnishRecipe2").show();
+                    $("#garnishRecipe3").show();
+                    $("#garnishRecipe").text(x["garnish"][0]);
+                    $("#garnishRecipe2").text(x["garnish"][1]);
+                    $("#garnishRecipe3").text(x["garnish"][2])
+                } else if(x["garnish"].length === 4){
+                    $("#garnishRecipe2").show();
+                    $("#garnishRecipe3").show();
+                    $("#garnishRecipe4").show();
+                    $("#garnishRecipe").text(x["garnish"][0]);
+                    $("#garnishRecipe2").text(x["garnish"][1]);
+                    $("#garnishRecipe3").text(x["garnish"][2]);
+                    $("#garnishRecipe4").text(x["garnish"][3]);
+                }
+                if(x["batch"] === "Batch"){
+                    $(".drink-title").show();
+                    $("#drinkTitle").text(this.value);
+                    $("#drinkPhoto").attr("src", x["photo"]);
+                    $(".batch-class").hide();
+                    if(x["name"] === "Sangria (Batch)"){
+                        $("#liquor").text("Wine :");
+                        $("#liqueurRecipe2").show();
+                        $("#liqueurRecipe2").text(x["liqueur"][1]);
+                    }
+                } 
+             */
+                
+            }
+
+        });
+    })
+
+    /* Drink Name Array */
+    /*
+    var drinkNameArray = [
+       "aldoronaFishBowl",
+       "avocadoMargarita",
+       "babyStout",
+       "bloodOrangeAndSage",
+       "carajillo",
+       "churchill",
+       "cocorita",
+       "cucumberita",
+       "dropItLikeItsHot",
+       "espressoMartini",
+       "floridaGrovePunch",
+       "floridaGrovePunchFishBowl",
+       "jaliscoGardens",
+       "maserita",
+       "mexicanBullDog",
+       "michelada",
+       "naturita",
+       "oaxacanOldFashioned",
+       "pacificMule",
+       "paloma",
+       "pricklyPear",
+       "sangria",
+       "skinnyOrganic",
+       "spicyBerryFresca",
+       "tntRita",
+       "tntRumRunner",
+       "tntRumRunnerFishBowl",
+       "tropicalMargarita"
+    ]
+    */
+
 
     /* All Buttons */
+    
+
     var extraRecipeSlots =
     $("#liquorRecipe2").hide();
     $("#liqueurRecipe2").hide();
