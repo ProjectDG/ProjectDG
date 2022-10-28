@@ -45,7 +45,7 @@ class Drink{
    let skinnyOrganic = new Drink("Skinny Organic", "Hurricane Glass", "Guest Choice", ["Azunia Blanco 2 oz"], null, ["Agave 1 oz,", "Lime Juice 1 oz"], ["Lime"],"./images/skinnyMargarita.jpg", null);
    //let spicyBerryFresca = new Drink("Spicy Berry Fresca", "Rocks Glass", null, ["Dulce Vida Pineapple Jalapeno 1.5 oz"], null, ["Grapefruit Soda 3 oz,", "Jalapeno (1 Slice Muddled),", "Lime Juice .5 oz,", "Strawberry Puree .75 oz"], ["Jalapeno (Slice),", "Strawberry (Slice)"],"./images/logo.jpg", null);
    let spicyWatermelonMargarita = new Drink("Spicy Watermelon Margarita", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Habanero 2 oz"], null, ["Agave .75 oz,", "Lime Juice .5 oz,", "Watermelon Juice 1.5 oz"], ["Watermelon Chunks Covered in Tajin"], "./images/spicyWatermelonMargarita.jpg", null)
-   //let tequilaSour = new Drink("Tequila Sour", "Coupe Glass", null, ["Tanteo Chipotle 2 oz"], null, ["Agave .75 oz,", "Egg Whites 1.5 oz,", "Lime Juice 1.25 oz"], ["Angostura Bitters (Stencil),", "Lime Twist"], "./images/logo.jpg", null)
+   //let tequilaSour = new Drink("Tequila Sour", "Coupe Glass", null, ["Tanteo Chipotle 2 oz"], null, ["Agave .75 oz,", "Egg Whites 1.5 oz,", "Lime Juice 1.25 oz"], ["Angostura Bitters (Stencil),", "Lime Twist"], "./images/logo.jpg", null);
    let tntRita = new Drink("T&T Rita", "Mason Jar", "Guest Choice", ["El Jimador 2 oz"], ["Combier Orange .75 oz"], ["Agave .5 oz,", "Lime Juice 1.5 oz"], ["Lime"],"./images/tntMargarita.jpg", null);
    let tntRumRunner = new Drink("T&T Rum Runner", "Pineapple Glass", null, ["Papas Pilar Anejo 1.25 oz,", "Club Caribe Banana Rum 1 oz"], null,["Guava Puree .5 oz,", "Lime Juice 1 oz,", "Pineapple Juice 1 oz"], ["Dark Rum (Float) if Ordered,", "Pineapple Wedge and Leaf"],"./images/tntRumRunner.jpg", null);
    let tntRumRunnerFB = new Drink("T&T Rum Runner (Fish Bowl)", "Fish Bowl", null, ["Papas Pilar Anejo 3.75 oz,", "Club Caribe Banana Rum 3 oz"], null, ["Guava Puree 1.5 oz,", "Lime Juice 2.25 oz,", "Pineapple Juice 2.25 oz"], ["Dark Rum (Float) if Ordered,", "Pineapple Wedge and Leaf"],"./images/tntRumRunnerFB.jpg", null);
@@ -68,12 +68,15 @@ class Drink{
 
 
    // Searchable Drinks
-   let cosmopolitan = new Drink("Cosmopolitan", "Martini Glass", null, ["Lemon Vodka 2 oz"], ["Combier Orange  .75 oz"], ["Cranberry Juice 1.5 oz,", "Lime Juice .75 oz"], ["Lemon Twist"], "./images/logo.jpg", null)
+   let cosmopolitan = new Drink("Cosmopolitan", "Martini Glass", null, ["Lemon Vodka 2 oz"], ["Combier Orange  .75 oz"], ["Cranberry Juice 1.5 oz,", "Lime Juice .75 oz"], ["Lemon Twist"], "./images/logo.jpg", null);
+   let dropItLikeItsHotOldWay = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange  .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Grenadine .5 oz,", "House Margarita 2 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
    let longIslandIcedTea = new Drink("Long Island Iced Tea", "Pint Glass", null, ["Gin .5 oz,", "Tequila .5 oz,", "Vodka .5 oz,", "Rum .5 oz"], ["Triple Sec .5 oz"], ["Agave .5,", "Coke (Splash),", "Lemon Juice 1 oz"], ["Lemon Wheel"], "./images/logo.jpg", null);
-   let tntMojito = new Drink("T&T Mojito", "Mason Jar", null, ["Rum 1.5 oz"], null, ["Agave .5 oz,", "Lime Juice .5 oz,", "Mint Leaves (2-3 Muddled),", "Soda Water & Sprite"], ["Mint Leaves"], "./images/logo.jpg", null)
+   let tntMojito = new Drink("T&T Mojito", "Mason Jar", null, ["Rum 1.5 oz"], null, ["Agave .5 oz,", "Lime Juice .5 oz,", "Mint Leaves (2-3 Muddled),", "Soda Water & Sprite"], ["Mint Leaves"], "./images/logo.jpg", null);
    let pinaColada = new Drink("Pina Colada", "Mason Jar", null, ["Rum 1.5 oz,"], null, ["Pina Colada Mix 1 oz,", "Pineapple Juice 2 oz"], ["Orange and Cherry (Flag)"], "./images/logo.jpg", null);
    let ranchWater = new Drink("Ranch Water", "Rocks Glass", null, ["Tequila 1.5 oz"], null, ["Lime Juice .5 oz,", "Soda Water"], ["Lime Wheel"], "./images/logo.jpg", null);
+   let spicyBerryFresca = new Drink("Spicy Berry Fresca", "Rocks Glass", null, ["Dulce Vida Pineapple Jalapeno 1.5 oz"], null, ["Grapefruit Soda 3 oz,", "Jalapeno (1 Slice Muddled),", "Lime Juice .5 oz,", "Strawberry Puree .75 oz"], ["Jalapeno (Slice),", "Strawberry (Slice)"],"./images/logo.jpg", null);
    let strawberryDaquairi = new Drink("Strawberry Daquairi", "Hurricane Glass", null, ["Rum 2 oz"], null, ["Lime Juice .75,", "Strawberry Puree 1.5 oz"], ["Lime"],"./images/logo.jpg", null);
+   let tequilaSour = new Drink("Tequila Sour", "Coupe Glass", null, ["Tanteo Chipotle 2 oz"], null, ["Agave .75 oz,", "Egg Whites 1.5 oz,", "Lime Juice 1.25 oz"], ["Angostura Bitters (Stencil),", "Lime Twist"], "./images/logo.jpg", null);
    let whiteRussian = new Drink("White Russian");
    
    let drinks = [
@@ -87,6 +90,7 @@ class Drink{
        cocorita,
        cucumberita,
        dropItLikeItsHot,
+       dropItLikeItsHotOldWay,
        dulceRaz,
        espressoMartini,
        floridaGrovePunch,
@@ -106,10 +110,10 @@ class Drink{
        paloma,
        pricklyPearMargarita,
        skinnyOrganic,
-       //spicyBerryFresca,
+       spicyBerryFresca,
        specialMargarita,
        spicyWatermelonMargarita,
-       //tequilaSour,
+       tequilaSour,
        tntMojito,
        tntRita,
        tntRumRunner,
