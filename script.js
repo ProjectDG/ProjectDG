@@ -1,5 +1,5 @@
 class Drink{
-    constructor(name, glass, rim, liquor = [], liqueur = [], mixers = [], garnish = [], photo, batch, instructions = []){
+    constructor(name, glass, rim, liquor = [], liqueur = [], mixers = [], garnish = [], photo, batch, instructions= []){
      this.name = name;
      this.glass = glass;
      this.rim = rim;
@@ -34,7 +34,6 @@ class Drink{
    let maserita = new Drink("Maserita", "Margarita Glass", "Guest Choice", ["Milagro Silver 2 oz"], ["Grand Marnier (.5 oz Float)"], ["Agave 1 oz,", "Happy Juice 2 oz"], ["Lime"], "./images/maserita.jpg", null);
    let mexicanBullDog = new Drink("Mexican Bull Dog", "Rocks Glass", null, ["1800 Reposado 1 oz,", "St. George Nola Coffee Vodka 1.5 oz"], null, [ "Cola (Splash),", "Cream (1 oz Float)"], null,"./images/logo.jpg", null);
    //let michelada = new Drink("Michelada", "Beer Mug", "Tajin Chile Lime Salt", null, null, ["Dos Equis,", "Michelada Mix 5 oz"], ["Lime Wheel"],"./images/logo.jpg", null);
-   let mistletoeMargarita = new Drink("Mistletoe Margarita", "Margarita Glass", "Guest Choice", ["Milagro Silver 1.5 oz"], ["Grand Marnier 2 oz"], ["Agave 1 oz,", "Cranberry Juice 2 oz,", "Lime Juice 2 oz"], ["Cranberries,", "Rosemary"],"./images/logo.jpg", null)
    let naturita = new Drink("Naturita", "Hurricane Glass", "Guest Choice", ["Altos Blanco 2 oz"], null, ["Agave 1 oz,", "Happy Juice 1.5 oz"], ["Lime"],"./images/naturita.jpg", null);
    let oaxacanOldFashioned = new Drink("Oaxacan Old Fashioned", "Rocks Glass", null, ["Altos Reposado 1.5 oz,", "Los Vecinos Espadin Mezcal .5 oz"], null, ["Agave .25 oz,", "Angostura Bitters (2 Dashes)"], ["Flamed Orange Peel"],"./images/oaxacanOldFashioned.jpg", null);
    let pacificMule = new Drink("Pacific Mule", "Copper Mug", null, ["St. George Green Chili Vodka 1.5 oz"], null, ["Agave .25 oz,", "Cucumber (1 Slice Muddled),", "Ginger Beer 4 oz,", "Lime Juice .25 oz"], ["Cucumber Wheel"],"./images/pacificMule.jpg", null);
@@ -55,7 +54,8 @@ class Drink{
    // Monthly Drink Specials
    //let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Guest Choice", ["Milagro Reposado 2 oz"], ["Blue Curaco .5 oz,", "Combier Orange  .5 oz"], ["Agave 1 oz,", "Cucumber (Muddle w/ Pinch of Salt),", "Happy Juice 1 oz"], ["Tajin Rimmed Cucumber"],"./images/logo.jpg", null);
    //let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Chipotle 2 oz"], ["Combier .5 oz"], ["Agave .75 oz,", "Lime Juice 1 oz,", "Pineapple Juice 1 oz"], ["2 Chili Peppers,", "Pineapple Slice"], "./images/logo.jpg", null); 
-   let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Churro Sugar", ["Altos Reposado 1.5 oz"], null, ["Agave .5 oz,", "Apple Cider 3 oz,", "Pinch of Cinnamon,", "Pinch of Nutmeg"], ["Cinnamon Stick,", "Sprinkle of Cinnamon"], "./images/logo.jpg", null); 
+   let ciderRita= new Drink("Cider'Rita", "Margarita Glass", "Churro Sugar", ["Altos Reposado 1.5 oz"], null, ["Agave .5 oz,", "Apple Cider 3 oz,", "Pinch of Cinnamon,", "Pinch of Nutmeg"], ["Cinnamon Stick,", "Sprinkle of Cinnamon"], "./images/logo.jpg", null);
+   let mistletoeMargarita = new Drink("Mistletoe Margarita", "Margarita Glass", "Guest Choice", ["Milagro Silver 1.5 oz"], ["Grand Marnier 1 oz"], ["Agave 1 oz,", "Cranberry Juice 2 oz,", "Lime Juice 2 oz"], ["Cranberries,", "Rosemary"],"./images/logo.jpg", null); 
 
 
 
@@ -87,6 +87,7 @@ class Drink{
        bloodOrangeMargarita,
        carajillo,
        churchill,
+       ciderRita,
        cocorita,
        cucumberita,
        dropItLikeItsHot,
@@ -111,7 +112,7 @@ class Drink{
        pricklyPearMargarita,
        skinnyOrganic,
        spicyBerryFresca,
-       specialMargarita,
+       //specialMargarita,
        spicyWatermelonMargarita,
        tequilaSour,
        tntMojito,
@@ -178,13 +179,13 @@ class Drink{
             resultItem.classList.add('all-buttons');
             resultItem.id = drink.name.toLowerCase();
             resultItem.value = drink.name;
-            const text = document.createTextNode(drink.name); /* make this specific to the object like the pics so you can add <br> */
+            const text = document.createTextNode(drink.name); 
             resultItem.appendChild(text);
             list.appendChild(resultItem);
             $(".results-list").show();
 
             $(".result-item").show()//.fadeIn(200);
-            console.log(drink.name)  /* figure out to add this to the buttons value */
+            console.log(drink.name)  
           }
 
           if (results.length === 0 ){
@@ -450,142 +451,12 @@ $(document).ready(function(){
                         $("#liquor").text("Wine :");
                     }
                 } 
-/*
-                if(x["instructions"] === string){
-                    $(".item4").append('<p id="test"></p>'); //.................not working
-                    $("#test").show();
-                    $("#test").text(x["instructions"]);
-                }
-             
-               /* 
-                if(x["liquor"].length === 2){
-                    $("#liquorRecipe2").show();
-                    $("#liquorRecipe").text(x["liquor"][0]);
-                    $("#liquorRecipe2").text(x["liquor"][1]);
-                }
-                
-\
-                if(x["liqueur"] == null){                 
-                    $("#liqueur").hide();
-                    $("#liqueurRecipe").hide();
-                    $(".recipe-container").css( "grid-template-rows", "min-content 3vh min-content 3vh min-content min-content 0 min-content 3vh min-content min-content min-content min-content min-content 3vh min-content min-content min-content min-content" );
-                } else {
-                    $("#rim").show();
-                    $("#rimRecipe").show();
-                    $("#liqueur").show();
-                    $("#liqueurRecipe").show();
-                    $("#liqueurRecipe").text(x["liqueur"][0]);
-                    $(".recipe-container").css( "grid-template-rows", "min-content 3vh min-content 3vh min-content min-content 3vh min-content 3vh min-content min-content min-content min-content min-content 3vh min-content min-content min-content min-content" );
-                }
-                
-                if(x["mixers"].length === 1){
-                    $("#mixersRecipe").text(x["mixers"][0]);
-                } else if(x["mixers"].length === 2){
-                    $("#mixersRecipe2").show();
-                    $("#mixersRecipe").text(x["mixers"][0]);
-                    $("#mixersRecipe2").text(x["mixers"][1]);
-                } else if(x["mixers"].length === 3){
-                    $("#mixersRecipe2").show();
-                    $("#mixersRecipe3").show();
-                    $("#mixersRecipe").text(x["mixers"][0]);
-                    $("#mixersRecipe2").text(x["mixers"][1]);
-                    $("#mixersRecipe3").text(x["mixers"][2])
-                } else if(x["mixers"].length === 4){
-                    $("#mixersRecipe2").show();
-                    $("#mixersRecipe3").show();
-                    $("#mixersRecipe4").show();
-                    $("#mixersRecipe").text(x["mixers"][0]);
-                    $("#mixersRecipe2").text(x["mixers"][1]);
-                    $("#mixersRecipe3").text(x["mixers"][2]);
-                    $("#mixersRecipe4").text(x["mixers"][3]);
-                } else if(x["mixers"].length === 5){
-                    $("#mixersRecipe2").show();
-                    $("#mixersRecipe3").show();
-                    $("#mixersRecipe4").show();
-                    $("#mixersRecipe5").show();
-                    $("#mixersRecipe").text(x["mixers"][0]);
-                    $("#mixersRecipe2").text(x["mixers"][1]);
-                    $("#mixersRecipe3").text(x["mixers"][2]);
-                    $("#mixersRecipe4").text(x["mixers"][3]);
-                    $("#mixersRecipe5").text(x["mixers"][4]);
-                } /*
-                else if(x["mixers"] === null){
-                                                        // look into changing fromm displaying "None" to hiding if == null
-                }
-                */
-/*
-                if(x["garnish"].length === 1){
-                    $("#garnishRecipe").text(x["garnish"][0]);
-                } else if(x["garnish"].length === 2){
-                    $("#garnishRecipe2").show();
-                    $("#garnishRecipe").text(x["garnish"][0]);
-                    $("#garnishRecipe2").text(x["garnish"][1]);
-                } else if(x["garnish"].length === 3){
-                    $("#garnishRecipe2").show();
-                    $("#garnishRecipe3").show();
-                    $("#garnishRecipe").text(x["garnish"][0]);
-                    $("#garnishRecipe2").text(x["garnish"][1]);
-                    $("#garnishRecipe3").text(x["garnish"][2])
-                } else if(x["garnish"].length === 4){
-                    $("#garnishRecipe2").show();
-                    $("#garnishRecipe3").show();
-                    $("#garnishRecipe4").show();
-                    $("#garnishRecipe").text(x["garnish"][0]);
-                    $("#garnishRecipe2").text(x["garnish"][1]);
-                    $("#garnishRecipe3").text(x["garnish"][2]);
-                    $("#garnishRecipe4").text(x["garnish"][3]);
-                }
-                if(x["batch"] === "Batch"){
-                    $(".drink-title").show();
-                    $("#drinkTitle").text(this.value);
-                    $("#drinkPhoto").attr("src", x["photo"]);
-                    $(".batch-class").hide();
-                    if(x["name"] === "Sangria (Batch)"){
-                        $("#liquor").text("Wine :");
-                        $("#liqueurRecipe2").show();
-                        $("#liqueurRecipe2").text(x["liqueur"][1]);
-                    }
-                } 
-             */
+
                 
             }
 
         });
     })
-
-    /* Drink Name Array */
-    /*
-    var drinkNameArray = [
-       "aldoronaFishBowl",
-       "avocadoMargarita",
-       "babyStout",
-       "bloodOrangeAndSage",
-       "carajillo",
-       "churchill",
-       "cocorita",
-       "cucumberita",
-       "dropItLikeItsHot",
-       "espressoMartini",
-       "floridaGrovePunch",
-       "floridaGrovePunchFishBowl",
-       "jaliscoGardens",
-       "maserita",
-       "mexicanBullDog",
-       "michelada",
-       "naturita",
-       "oaxacanOldFashioned",
-       "pacificMule",
-       "paloma",
-       "pricklyPear",
-       "sangria",
-       "skinnyOrganic",
-       "spicyBerryFresca",
-       "tntRita",
-       "tntRumRunner",
-       "tntRumRunnerFishBowl",
-       "tropicalMargarita"
-    ]
-    */
 
 
     /* All Buttons */
@@ -680,7 +551,7 @@ $(document).ready(function(){
         $(".fishbowl-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
-
+/*
     $("#navDessert").click(function(){
         $(".item3").hide();
         $(".item4").hide();
@@ -697,6 +568,25 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".results-list").hide();
         $(".dessert-buttons").show()//.fadeIn(200);
+        $(".button-container").show();
+    });
+*/
+    $("#navMonthlySpecials").click(function(){
+        $(".item3").hide();
+        $(".item4").hide();
+        $(".drink-title").hide();
+        $("#liquorRecipe2").hide();
+        $("#mixersRecipe2").hide();
+        $("#mixersRecipe3").hide();
+        $("#mixersRecipe4").hide();
+        $("#mixersRecipe5").hide();
+        $("#garnishRecipe2").hide();
+        $("#garnishRecipe3").hide();
+        $("#garnishRecipe4").hide();
+        $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".results-list").hide();
+        $(".monthly-specials-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
 
