@@ -109,6 +109,17 @@ body {
         color: white;
       }
       
+      #navDessert{
+        position: relative;
+        border: 4px outset rgb(122, 113, 113);
+        margin: 0% 2% 0% 2%;
+        width: 12vw;
+        height: 10vh;
+        font-size: 2.75vh;
+        background-color: black;
+        color: white;
+      }
+
     .nav-buttons:focus, .all-buttons, #instructionsButton{
         outline: none;
       }
@@ -118,7 +129,8 @@ body {
     .fishbowl-buttons, 
     .dessert-buttons,
     .monthly-specials-buttons,
-    .other-buttons, 
+    .other-buttons,
+    #navDessert,
     .batch-buttons, 
     .form-container, 
     .results-container, 

@@ -174,6 +174,7 @@ class Drink{
         
           for(const drink of results){
             $(".all-buttons").hide();
+            $("#navDessert").hide();
             const resultItem = document.createElement('button');
             resultItem.classList.add('result-item');
             resultItem.classList.add('all-buttons');
@@ -491,6 +492,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
+        $("#navDessert").hide();
         $(".margarita-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
@@ -510,6 +512,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
+        $("#navDessert").hide();
         $(".frozen-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
@@ -548,10 +551,11 @@ $(document).ready(function(){
         $(".all-buttons").hide();        
         $(".form-container").hide();
         $(".results-list").hide();
+        $("#navDessert").hide();
         $(".fishbowl-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
-/*
+
     $("#navDessert").click(function(){
         $(".item3").hide();
         $(".item4").hide();
@@ -567,10 +571,11 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
-        $(".dessert-buttons").show()//.fadeIn(200);
+        $("#navDessert").hide();
+        $(".dessert-buttons").show()
         $(".button-container").show();
     });
-*/
+
     $("#navMonthlySpecials").click(function(){
         $(".item3").hide();
         $(".item4").hide();
@@ -586,6 +591,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
         $(".results-list").hide();
+        $("#navDessert").hide();
         $(".monthly-specials-buttons").show()//.fadeIn(200);
         $(".button-container").show();
     });
@@ -605,6 +611,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".results-list").hide();
         $(".other-buttons").show()//.fadeIn(200);
+        $("#navDessert").show()//.fadeIn(200);
         $(".form-container").show();
         $(".button-container").show();
         searchInput.value = '';
