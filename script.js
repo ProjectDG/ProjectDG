@@ -70,7 +70,7 @@ class Drink{
    // Searchable Drinks
    let cosmopolitan = new Drink("Cosmopolitan", "Martini Glass", null, ["Lemon Vodka 2 oz"], ["Combier Orange  .75 oz"], ["Cranberry Juice 1.5 oz,", "Lime Juice .75 oz"], ["Lemon Twist"], "./images/logo.jpg", null);
    let dropItLikeItsHotOldWay = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange  .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Grenadine .5 oz,", "House Margarita 2 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
-   let floRita = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Guest Choice", ["Don Julio Blanco 1 oz"], ["Blue Curacao  .5 oz"], ["House Margarita 2 oz,", "Sprite (splash)"], ["Orange and Lime"],"./images/logo.jpg", null); 
+   let floRita = new Drink("FloRita", "Margarita Glass", "Guest Choice", ["Don Julio Blanco 1 oz"], ["Blue Curacao  .5 oz"], ["House Margarita 2 oz,", "Sprite (splash)"], ["Orange and Lime"],"./images/logo.jpg", null); 
    let longIslandIcedTea = new Drink("Long Island Iced Tea", "Pint Glass", null, ["Gin .5 oz,", "Tequila .5 oz,", "Vodka .5 oz,", "Rum .5 oz"], ["Triple Sec .5 oz"], ["Agave .5,", "Coke (Splash),", "Lemon Juice 1 oz"], ["Lemon Wheel"], "./images/logo.jpg", null);
    let tntMojito = new Drink("T&T Mojito", "Mason Jar", null, ["Rum 1.5 oz"], null, ["Agave .5 oz,", "Lime Juice .5 oz,", "Mint Leaves (2-3 Muddled),", "Soda Water & Sprite"], ["Mint Leaves"], "./images/logo.jpg", null);
    let pinaColada = new Drink("Pina Colada", "Mason Jar", null, ["Rum 1.5 oz,"], null, ["Pina Colada Mix 1 oz,", "Pineapple Juice 2 oz"], ["Orange and Cherry (Flag)"], "./images/logo.jpg", null);
@@ -636,6 +636,7 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".batch-buttons").show()//.fadeIn(200);
         $(".results-list").hide();
+        $("#navDessert").hide();
         $(".button-container").show();
     });
 
