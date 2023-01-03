@@ -111,6 +111,7 @@ class Drink{
        oaxacanOldFashioned,
        pacificMule,
        paloma,
+       pomegraMintMargarita,
        pricklyPearMargarita,
        skinnyOrganic,
        spicyBerryFresca,
