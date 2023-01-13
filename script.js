@@ -261,6 +261,7 @@ $(document).ready(function(){
         $(".initialRecipe").show();
         $("#liqueurRecipe2").hide();
         $(".recipe-container").remove('#liquor');
+        openFullscreen();
 
 
 
