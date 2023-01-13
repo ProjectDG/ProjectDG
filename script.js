@@ -85,6 +85,7 @@ class Drink{
    let bloodOrangeMargaritaOldWay = new Drink("Blood Orange Margarita (Old Way)", "Margarita Glass", "Guest Choice", ["Pueblo Viejo Reposado 1 oz"], ["Solerno (Blood Orange Liqeuer) .5 oz"], ["Blood Orange Juice .75 oz,", "Grenadine .5 oz,", "House Margarita 2 oz,", "Sprite (Splash)"], ["Orange Slice and Lime Wedge"],"./images/logo.jpg", null);
    let cosmopolitan = new Drink("Cosmopolitan", "Martini Glass", null, ["Lemon Vodka 2 oz"], ["Combier Orange  .75 oz"], ["Cranberry Juice 1.5 oz,", "Lime Juice .75 oz"], ["Lemon Twist"], "./images/logo.jpg", null);
    let dropItLikeItsHotOldWay = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Grenadine .5 oz,", "House Margarita 2 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
+   let floRita = new Drink("Flo'Rita", "Margarita Glass", "Guest Choice", ["Pueblo Viejo Blanco 1 oz"], ["Blue Curacao .5 oz"], ["House Margarita 2 oz,", "Orange Juice .5 oz,", "Sprite (Splash)"], ["Orange Slice and Lime Wedge"],"./images/logo.jpg", null);
    let longIslandIcedTea = new Drink("Long Island Iced Tea", "Pint Glass", null, ["Gin .5 oz,", "Tequila .5 oz,", "Vodka .5 oz,", "Rum .5 oz"], ["Triple Sec .5 oz"], ["Agave .5,", "Coke (Splash),", "Lemon Juice 1 oz"], ["Lemon Wheel"], "./images/logo.jpg", null);
    let tntMojito = new Drink("T&T Mojito", "Mason Jar", null, ["Rum 1.5 oz"], null, ["Agave .5 oz,", "Lime Juice .5 oz,", "Mint Leaves (2-3 Muddled),", "Soda Water & Sprite"], ["Mint Leaves"], "./images/logo.jpg", null);
    let pinaColada = new Drink("Pina Colada", "Mason Jar", null, ["Rum 1.5 oz,"], null, ["Pina Colada Mix 1 oz,", "Pineapple Juice 2 oz"], ["Orange and Cherry (Flag)"], "./images/logo.jpg", null);
@@ -114,6 +115,7 @@ class Drink{
        floridaGrovePunch,
        floridaGrovePunchFB,
        floridaSunset,
+       floRita,
        honeySyrupBatch,
        houseMargaritaFrozen,
        //jaliscoGardens,
@@ -534,6 +536,7 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".frozen-buttons").show()//.fadeIn(200);
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#navSpecialty").click(function(){
@@ -554,6 +557,7 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".specialty-buttons").show()//.fadeIn(200);
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#navFishBowls").click(function(){
@@ -574,6 +578,7 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".fishbowl-buttons").show()//.fadeIn(200);
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#navDessert").click(function(){
@@ -594,6 +599,7 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".dessert-buttons").show()
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#navMonthlySpecials").click(function(){
@@ -614,6 +620,7 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".monthly-specials-buttons").show()//.fadeIn(200);
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#navOther, #clear").click(function(){
@@ -635,6 +642,7 @@ $(document).ready(function(){
         $(".form-container").show();
         $(".button-container").show();
         searchInput.value = '';
+        openFullscreen();
     });
 
     $("#navBatch").click(function(){
@@ -654,6 +662,7 @@ $(document).ready(function(){
         $(".batch-buttons").show()//.fadeIn(200);
         $(".results-list").hide();
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#instructionsButton").click(function(){
