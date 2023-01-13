@@ -1,3 +1,16 @@
+var elem = document.getElementsByTagName("BODY")[0];
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+
+
 class Drink{
     constructor(name, glass, rim, liquor = [], liqueur = [], mixers = [], garnish = [], photo, batch, instructions= []){
      this.name = name;
@@ -55,8 +68,8 @@ class Drink{
    //let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Guest Choice", ["Milagro Reposado 2 oz"], ["Blue Curaco .5 oz,", "Combier Orange  .5 oz"], ["Agave 1 oz,", "Cucumber (Muddle w/ Pinch of Salt),", "Happy Juice 1 oz"], ["Tajin Rimmed Cucumber"],"./images/logo.jpg", null);
    //let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Chipotle 2 oz"], ["Combier .5 oz"], ["Agave .75 oz,", "Lime Juice 1 oz,", "Pineapple Juice 1 oz"], ["2 Chili Peppers,", "Pineapple Slice"], "./images/logo.jpg", null); 
    let ciderRita= new Drink("Cider'Rita", "Margarita Glass", "Churro Sugar", ["Altos Reposado 1.5 oz"], null, ["Agave .5 oz,", "Apple Cider 3 oz,", "Pinch of Cinnamon,", "Pinch of Nutmeg"], ["Cinnamon Stick,", "Sprinkle of Cinnamon"], "./images/logo.jpg", null);
-   let mistletoeMargarita = new Drink("Mistletoe Margarita", "Margarita Glass", "Guest Choice", ["Milagro Silver 1.5 oz"], ["Grand Marnier 2 oz"], ["Agave 1 oz,", "Cranberry Juice 2 oz,", "Lime Juice 2 oz"], ["Cranberries,", "Rosemary"],"./images/logo.jpg", null); 
-   let pomegraMintMargarita = new Drink("PomegraMint Margarita", "Margarita Glass", "Sugar", ["Altos Reposado"], [".5 oz Grand Mariner"],["Agave .5 oz,", "Lime Juice 1.5 oz,", "Mint Leaves (5 Muddled),", "Pomegranate Juice 1 oz"], ["Lime,", "Mint Sprig"],"./images/logo.jpg", null);
+   let mistletoeMargarita = new Drink("Mistletoe Margarita", "Margarita Glass", "Guest Choice", ["Milagro Silver 1.5 oz"], ["Grand Marnier 1 oz"], ["Agave 1 oz,", "Cranberry Juice 2 oz,", "Lime Juice 2 oz"], ["Cranberries,", "Rosemary"],"./images/logo.jpg", null); 
+
 
 
    // Batch Recipes
@@ -70,7 +83,6 @@ class Drink{
    // Searchable Drinks
    let cosmopolitan = new Drink("Cosmopolitan", "Martini Glass", null, ["Lemon Vodka 2 oz"], ["Combier Orange  .75 oz"], ["Cranberry Juice 1.5 oz,", "Lime Juice .75 oz"], ["Lemon Twist"], "./images/logo.jpg", null);
    let dropItLikeItsHotOldWay = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange  .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Grenadine .5 oz,", "House Margarita 2 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
-   let floRita = new Drink("FloRita", "Margarita Glass", "Guest Choice", ["Don Julio Blanco 1 oz"], ["Blue Curacao  .5 oz"], ["House Margarita 2 oz,", "Sprite (splash)"], ["Orange and Lime"],"./images/logo.jpg", null); 
    let longIslandIcedTea = new Drink("Long Island Iced Tea", "Pint Glass", null, ["Gin .5 oz,", "Tequila .5 oz,", "Vodka .5 oz,", "Rum .5 oz"], ["Triple Sec .5 oz"], ["Agave .5,", "Coke (Splash),", "Lemon Juice 1 oz"], ["Lemon Wheel"], "./images/logo.jpg", null);
    let tntMojito = new Drink("T&T Mojito", "Mason Jar", null, ["Rum 1.5 oz"], null, ["Agave .5 oz,", "Lime Juice .5 oz,", "Mint Leaves (2-3 Muddled),", "Soda Water & Sprite"], ["Mint Leaves"], "./images/logo.jpg", null);
    let pinaColada = new Drink("Pina Colada", "Mason Jar", null, ["Rum 1.5 oz,"], null, ["Pina Colada Mix 1 oz,", "Pineapple Juice 2 oz"], ["Orange and Cherry (Flag)"], "./images/logo.jpg", null);
@@ -95,7 +107,6 @@ class Drink{
        dropItLikeItsHotOldWay,
        dulceRaz,
        espressoMartini,
-       floRita,
        floridaGrovePunch,
        floridaGrovePunchFB,
        floridaSunset,
@@ -111,7 +122,6 @@ class Drink{
        oaxacanOldFashioned,
        pacificMule,
        paloma,
-       pomegraMintMargarita,
        pricklyPearMargarita,
        skinnyOrganic,
        spicyBerryFresca,
@@ -498,6 +508,7 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".margarita-buttons").show()//.fadeIn(200);
         $(".button-container").show();
+        openFullscreen();
     });
 
     $("#navFrozen").click(function(){
@@ -637,7 +648,6 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".batch-buttons").show()//.fadeIn(200);
         $(".results-list").hide();
-        $("#navDessert").hide();
         $(".button-container").show();
     });
 
