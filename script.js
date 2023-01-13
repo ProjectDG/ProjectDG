@@ -35,7 +35,7 @@ class Drink{
    let churchill = new Drink("Churchill", "Rocks Glass", null, ["Four Roses Bourbon 1.5 oz"], ["Ancho Reyes Chili Liqueur .5 oz"], ["Agave .75 oz,", "Blackberry (1 Muddled) and Orange (1 Slice Muddled),", "Lemon Juice .5 oz"], ["Blackberry and Orange Slice (Flag)"],"./images/churchill.jpg", null);
    let cocorita = new Drink("CocoRita", "Hurricane Glass", "Coconut Powder", ["1800 Coconut 1.5 oz"], ["Combier Orange .5 oz"], ["Coconut Puree 1 oz,", "Lime Juice .5 oz,", "Pineapple Juice .5 oz"], ["Lime"],"./images/cocoRita.jpg", null);
    let cucumberita = new Drink("CucumbeRita", "Margarita Glass", "Guest Choice", ["Milagro Reposado 1.5 oz"], ["Combier Orange .5 oz"], ["Agave .5 oz,", "Cayenne (1 Shakes),", "Cucumber (3 Slices Muddled),", "Lime Juice 1.5 oz"], ["Cucumber Wheel"],"./images/cucumbeRita.jpg", null);
-   let dropItLikeItsHot = new Drink("Drop It LIke It's Hot", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange  .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Lime Juice 1.5 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
+   let dropItLikeItsHot = new Drink("Drop It LIke It's Hot", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange  .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Lime Juice 1.5 oz"], ["Dried Chili Pepper (2 Split)"],"./images/logo.jpg", null);
    let dulceRaz = new Drink("Dulce Raz", "Rocks Glass", null, ["Dulce Vida Pineapple Jalapeno 1.5 oz"], null, ["Agave .25 oz,", "Lime Juice .5 oz,", "Raspberry Syrup (Monin) 1 oz"], ["Pineapple Wedge and Jalapeno Slice"], "./images/dulceRaz.jpg");
    let espressoMartini = new Drink("Espresso Martini", "Coupe Glass", null, ["Don Julio Reposado 1 oz"], ["Ancho Reyes Chili Liqueur 1 oz"], ["Chocolate Bitters (4 Dashes),", "Espresso 3 oz,", "Vanilla 1 oz"], ["Orange Peel"],"./images/logo.jpg", null);
    let floridaGrovePunch = new Drink("Florida Grove Punch", "Pineapple Glass", "Tajin Chile Lime Salt", ["Pueblo Viejo Blanco 1.5 oz"], null, ["Agave .75 oz,", "Cucumber (3 Slices Muddled),", "Lime Juice .5 oz,", "Watermelon Juice 1.5 oz"], ["Pineapple Wedge and Leaf"],"./images/floridaGrovePunch.jpg", null);
@@ -81,8 +81,9 @@ class Drink{
 
 
    // Searchable Drinks
+   let bloodOrangeMargaritaOldWay = new Drink("Blood Orange Margarita (Old Way)", "Margarita Glass", "Guest Choice", ["Pueblo Viejo Reposado 1 oz"], ["Solerno (Blood Orange Liqeuer) .5 oz"], ["Blood Orange Juice .75 oz,", "Grenadine .5 oz,", "House Margarita 2 oz,", "Sprite (Splash)"], ["Orange Slice and Lime Wedge"],"./images/logo.jpg", null);
    let cosmopolitan = new Drink("Cosmopolitan", "Martini Glass", null, ["Lemon Vodka 2 oz"], ["Combier Orange  .75 oz"], ["Cranberry Juice 1.5 oz,", "Lime Juice .75 oz"], ["Lemon Twist"], "./images/logo.jpg", null);
-   let dropItLikeItsHotOldWay = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange  .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Grenadine .5 oz,", "House Margarita 2 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
+   let dropItLikeItsHotOldWay = new Drink("Drop It LIke It's Hot (Old Way)", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 1.5 oz"], ["Combier Orange .5 oz"], ["Agave .5 oz,", "Cayenne (2 Shakes),", "Grenadine .5 oz,", "House Margarita 2 oz"], ["Dried Chili Pepper (2 Split)"],"./images/dropItLikeItsHot.jpg", null);
    let longIslandIcedTea = new Drink("Long Island Iced Tea", "Pint Glass", null, ["Gin .5 oz,", "Tequila .5 oz,", "Vodka .5 oz,", "Rum .5 oz"], ["Triple Sec .5 oz"], ["Agave .5,", "Coke (Splash),", "Lemon Juice 1 oz"], ["Lemon Wheel"], "./images/logo.jpg", null);
    let tntMojito = new Drink("T&T Mojito", "Mason Jar", null, ["Rum 1.5 oz"], null, ["Agave .5 oz,", "Lime Juice .5 oz,", "Mint Leaves (2-3 Muddled),", "Soda Water & Sprite"], ["Mint Leaves"], "./images/logo.jpg", null);
    let pinaColada = new Drink("Pina Colada", "Mason Jar", null, ["Rum 1.5 oz,"], null, ["Pina Colada Mix 1 oz,", "Pineapple Juice 2 oz"], ["Orange and Cherry (Flag)"], "./images/logo.jpg", null);
@@ -98,6 +99,7 @@ class Drink{
        avocadoSourMixBatch,
        babyStout,
        bloodOrangeMargarita,
+       bloodOrangeMargaritaOldWay,
        carajillo,
        churchill,
        ciderRita,
