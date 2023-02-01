@@ -186,7 +186,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        column-gap: 4vw;
+        column-gap: 2.5vw;
         row-gap: 5vh;
         overflow: scroll;
         grid-column: 1 / span 2;

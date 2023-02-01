@@ -43,11 +43,13 @@ class Drink{
    let floridaSunset = new Drink("Florida Sunset", "Rocks Glass", "Sugar", ["Bacardi Limon 1.5 oz"], ["Peach Schnapps .5 oz"], ["Agave .5 oz,", "Grenadine .5 oz,", "Lime Juice .5"], ["Orange and Cherry (Flag)"],"./images/floridaSunset.jpg", null);
    let houseMargaritaFrozen = new Drink ("House Margarita (Frozen)", "Mason Jar", "Guest Choice", ["Gold Tequila 1 oz,", "White Tequila 1 oz"], ["Triple Sec .5 oz"], ["Margarita Mix 2 oz,", "One Healthy Scoop of Ice"], ["Lime"],"./images/houseMargaritaFrozen.jpg", null);
    //let jaliscoGardens = new Drink("Jalisco Gardens", "Rocks Glass", "Tajin Chile Lime Salt", ["Volcan Blanco 1.5 oz"], ["Ancho Reyes Verde Liqueur .5 oz"], ["Agave .75 oz,", "Lime Juice .75 oz,", "Tomatillo (1 Quarter Muddled)"], ["Lime Wheel"],"./images/logo.jpg", null);
+   let jalapenoGuavaMargarita = new Drink("Jalapeno Guava Margarita", "Hurricane Glass", "Guest Choice", ["Casa Noble Blanco 2 oz"], null, ["Guava Puree 1.5 oz,","Jalapeno (1 Slice Shaken/Strained),", "Lime Juice 2 oz"], ["Lime and Jalapeno Slice"],"./images/logo.jpg", null);
    let juanCollins = new Drink("Juan Collins", "Rocks Glass", null, ["El Jimador Reposado 1.5 oz"], null, ["Agave .5 oz,", "Lemon Juice .5 oz,", "Topo Chico"], ["Lemon Twist"], "./images/juanCollins.jpg", null)
-   let maserita = new Drink("Maserita", "Margarita Glass", "Guest Choice", ["Milagro Silver 2 oz"], ["Grand Marnier (.5 oz Float)"], ["Agave 1 oz,", "Happy Juice 2 oz"], ["Lime"], "./images/maserita.jpg", null);
+   let maserita = new Drink("Maserita", "Margarita Glass", "Guest Choice", ["Milagro Silver 2 oz"], ["Grand Marnier .5 oz (Float)"], ["Agave 1 oz,", "Happy Juice 2 oz"], ["Lime"], "./images/maserita.jpg", null);
    let mexicanBullDog = new Drink("Mexican Bull Dog", "Rocks Glass", null, ["1800 Reposado 1 oz,", "St. George Nola Coffee Vodka 1.5 oz"], null, [ "Cola (Splash),", "Cream (1 oz Float)"], null,"./images/logo.jpg", null);
    //let michelada = new Drink("Michelada", "Beer Mug", "Tajin Chile Lime Salt", null, null, ["Dos Equis,", "Michelada Mix 5 oz"], ["Lime Wheel"],"./images/logo.jpg", null);
    let naturita = new Drink("Naturita", "Hurricane Glass", "Guest Choice", ["Altos Blanco 2 oz"], null, ["Agave 1 oz,", "Happy Juice 1.5 oz"], ["Lime"],"./images/naturita.jpg", null);
+   let nobleMargarita = new Drink("Noble Margarita", "Margarita Glass", "Guest Choice", ["Casa Noble Reposado 1.5 oz"], ["Grand Marnier .5 oz (Float)"], ["Agave 1 oz,", "Lime Juice 1.5 oz"], ["Lime"],"./images/logo.jpg", null);
    let oaxacanOldFashioned = new Drink("Oaxacan Old Fashioned", "Rocks Glass", null, ["Altos Reposado 1.5 oz,", "Los Vecinos Espadin Mezcal .5 oz"], null, ["Agave .25 oz,", "Angostura Bitters (2 Dashes)"], ["Flamed Orange Peel"],"./images/oaxacanOldFashioned.jpg", null);
    let pacificMule = new Drink("Pacific Mule", "Copper Mug", null, ["St. George Green Chili Vodka 1.5 oz"], null, ["Agave .25 oz,", "Cucumber (1 Slice Muddled),", "Ginger Beer 4 oz,", "Lime Juice .25 oz"], ["Cucumber Wheel"],"./images/pacificMule.jpg", null);
    let paloma = new Drink("Paloma", "Rocks Glass", null, ["Altos Blanco 1.5 oz"], null, ["Agave .5 oz,", "Grapefruit Soda 3 oz,", "Lime Juice .25 oz"], ["Lime"],"./images/paloma.jpg", null);
@@ -119,12 +121,14 @@ class Drink{
        honeySyrupBatch,
        houseMargaritaFrozen,
        //jaliscoGardens,
+       jalapenoGuavaMargarita,
        juanCollins,
        maserita,
        mexicanBullDog,
        //michelada,
        mistletoeMargarita,
        naturita,
+       nobleMargarita,
        oaxacanOldFashioned,
        pacificMule,
        paloma,
