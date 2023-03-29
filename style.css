@@ -144,6 +144,11 @@ body {
         display: none;
     }  
 
+    .monthly-specials-buttons{
+        width: 11vw;
+        height: 11vh;
+    }
+
     /* search container */
     .form-container{
         position: absolute;

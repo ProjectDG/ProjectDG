@@ -9,7 +9,7 @@ function openFullscreen() {
   }
 }
 
-
+openFullscreen();
 
 class Drink{
     constructor(name, glass, rim, liquor = [], liqueur = [], mixers = [], garnish = [], photo, batch, instructions= []){
@@ -67,12 +67,16 @@ class Drink{
    //let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Guest Choice", ["Milagro Reposado 2 oz"], ["Blue Curaco .5 oz,", "Combier Orange  .5 oz"], ["Agave 1 oz,", "Cucumber (Muddle w/ Pinch of Salt),", "Happy Juice 1 oz"], ["Tajin Rimmed Cucumber"],"./images/logo.jpg", null);
    //let specialMargarita = new Drink("'Special' Margarita", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Chipotle 2 oz"], ["Combier .5 oz"], ["Agave .75 oz,", "Lime Juice 1 oz,", "Pineapple Juice 1 oz"], ["2 Chili Peppers,", "Pineapple Slice"], "./images/logo.jpg", null); 
    let ciderRita= new Drink("Cider'Rita", "Margarita Glass", "Churro Sugar", ["Altos Reposado 1.5 oz"], null, ["Agave .5 oz,", "Apple Cider 3 oz,", "Pinch of Cinnamon,", "Pinch of Nutmeg"], ["Cinnamon Stick,", "Sprinkle of Cinnamon"], "./images/logo.jpg", null);
-   let dublinTheFun = new Drink("Dublin The Fun", "Rocks Glass", "Green Sugar",null,null, ["Agave .5 oz,", "Cucumber (3 Slices Muddled),", "Mint Leaves (4-5 Leaves Muddled),", "Soda Water"], ["Cucumber Slice and Mint Leaf"],"./images/logo.jpg", null);
+   let easterSunset = new Drink("Easter Sunset", "Rocks Glass", "Black Salt", ["Dobel Diamante 1.5 oz"], ["Ginger Liqueur .75 oz,", "Campari .25 (Float)"], ["Agave .25 oz,", "Grapefruit Soda .75 oz (After Shaking),", "Lime Juice .5oz"],null,"./images/logo.jpg", null);
    let mistletoeMargarita = new Drink("Mistletoe Margarita", "Margarita Glass", "Guest Choice", ["Milagro Silver 1.5 oz"], ["Grand Marnier 2 oz"], ["Agave 1 oz,", "Cranberry Juice 2 oz,", "Lime Juice 2 oz"], ["Cranberries,", "Rosemary"],"./images/logo.jpg", null); 
    let mexicanLeprechaun = new Drink("Mexican Leprechaun", "Mason Jar", "Guest Choice", ["Dulce Vida Pineapple Jalapeno 2 oz"], ["Grand Marnier .5 oz (Float)"], ["Agave .5 oz,", "Happy Juice 1 oz,", "Melon Liqueur .5 oz,", "Pineapple Juice .75 oz"], ["Pineapple Wedge and Jalapeno Slice"],"./images/logo.jpg", null);
    let pomegraMintMargarita = new Drink("PomegraMint Margarita", "Margarita Glass", "Sugar", ["Altos Reposado 1.5 oz"], [".5 oz Grand Mariner"],["Agave .5 oz,", "Lime Juice 1.5 oz,", "Mint Leaves (5 Muddled),", "Pomegranate Juice 1 oz"], ["Lime,", "Mint Sprig"],"./images/logo.jpg", null);
    let comingSoon = new Drink("Coming Soon",null,null,null,null,null,null,"./images/logo.jpg", null);
-
+   
+   //Monthly Specials Mocktails
+   let dublinTheFun = new Drink("Dublin The Fun", "Rocks Glass", "Green Sugar",null,null, ["Agave .5 oz,", "Cucumber (3 Slices Muddled),", "Mint Leaves (4-5 Leaves Muddled),", "Soda Water"], ["Cucumber Slice and Mint Leaf"],"./images/logo.jpg", null);
+   let gingerPeep = new Drink("Ginger Peep", "Mason Jar",null,null,null, ["Agave .75,", "Blood Orange Juice .75 oz,", "Cucumber Pieces (Muddled),", "Lime Juice .75 oz,", "Ginger Beer (After Shake)"],null,"./images/logo.jpg", null);
+   
 
    // Batch Recipes
    let avocadoSourMixBatch = new Drink("Avocado Sour Mix (Batch)", null, null, null, null, ["Avocado (pre-packaged) 9 oz,", "Agave 12 oz,", "Lime Juice 12 oz,", "Pineapple Juice 12 oz"], null, "./images/logo.jpg", "Batch");
@@ -117,11 +121,13 @@ class Drink{
        dropItLikeItsHotOldWay,
        dublinTheFun,
        dulceRaz,
+       easterSunset,
        espressoMartini,
        floridaGrovePunch,
        floridaGrovePunchFB,
        floridaSunset,
        floRita,
+       gingerPeep,
        honeySyrupBatch,
        houseMargaritaFrozen,
        //jaliscoGardens,
@@ -632,6 +638,8 @@ $(document).ready(function(){
         $("#navDessert").hide();
         $(".monthly-specials-buttons").show()//.fadeIn(200);
         $(".button-container").show();
+        $("#cocktails").show();
+        $("#mocktails").show();
         openFullscreen();
     });
 
@@ -677,6 +685,7 @@ $(document).ready(function(){
         openFullscreen();
     });
 
+    /*
     $("#instructionsButton").click(function(){
         $(".item3").hide();
         $(".item4").hide();
@@ -692,5 +701,6 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".form-container").hide();
     });
+    */
 
 }); // jQuery end tag 
