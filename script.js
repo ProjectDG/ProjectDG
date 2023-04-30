@@ -54,7 +54,6 @@ class Drink{
    //let sangria = new Drink("Sangria", "Wine Glass", null, ["St. George California Citrus Vodka .75 oz"], null, ["Agave .5 oz,", "Blackberry (3 Muddled),", "Lemon (1 Slice Muddled),", "Lolailo Sangria 4 oz,", "Orange (1 Slice Muddled)"], ["Blackberry and Orange Slice (Flag)"],"./images/logo.jpg"), null;
    let sangria = new Drink("Sangria", "Mason Jar", null, null, null, ["Ginger Ale,", "Sangria Mix (Half Glass with Ice)"], ["Blackberry and Orange Slice (Flag)"],"./images/logo.jpg", null);
    let skinnyOrganic = new Drink("Skinny Organic", "Hurricane Glass", "Guest Choice", ["Casa Noble Blanco 2 oz"], null, ["Agave 1 oz,", "Laime Juice 1 oz"], ["Lime"],"./images/skinnyMargarita.jpg", null);
-   let spicySenorita = new Drink("Spicy Senorita", "Mason Jar", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 2 oz"], ["Solerno .5 oz"], ["Agave .5 oz,", "Blood Orange Juice 1 oz,", "Happy Juice 1 oz"], [""],"./images/logo.jpg", null);
    let spicyWatermelonMargarita = new Drink("Spicy Watermelon Margarita", "Margarita Glass", "Tajin Chile Lime Salt", ["Tanteo Habanero 2 oz"], null, ["Agave .75 oz,", "Lime Juice .5 oz,", "Watermelon Juice 1.5 oz"], ["Watermelon Chunks Covered in Tajin"], "./images/spicyWatermelonMargarita.jpg", null)
    let tequilaSour = new Drink("Tequila Sour", "Coupe Glass", null, ["Tanteo Chipotle 2 oz"], null, ["Agave .75 oz,", "Egg Whites 1.5 oz,", "Lime Juice 1.25 oz"], ["Angostura Bitters (Stencil),", "Lime Twist"], "./images/logo.jpg", null);
    let tntNobleMargarita = new Drink("T&T Noble Margarita", "Margarita Glass", "Guest Choice", ["Casa Noble Marques 2 oz"], ["Grand Marnier Cuvee Louis-Alexandre .5 oz (Float)"], ["Agave 1 oz,", "Happy Juice 2 oz"], ["Lime"], "./images/maserita.jpg", null);
@@ -72,6 +71,7 @@ class Drink{
    let mistletoeMargarita = new Drink("Mistletoe Margarita", "Margarita Glass", "Guest Choice", ["Milagro Silver 1.5 oz"], ["Grand Marnier 2 oz"], ["Agave 1 oz,", "Cranberry Juice 2 oz,", "Lime Juice 2 oz"], ["Cranberries,", "Rosemary"],"./images/logo.jpg", null); 
    let mexicanLeprechaun = new Drink("Mexican Leprechaun", "Mason Jar", "Guest Choice", ["Dulce Vida Pineapple Jalapeno 2 oz"], ["Grand Marnier .5 oz (Float)"], ["Agave .5 oz,", "Happy Juice 1 oz,", "Melon Liqueur .5 oz,", "Pineapple Juice .75 oz"], ["Pineapple Wedge and Jalapeno Slice"],"./images/logo.jpg", null);
    let pomegraMintMargarita = new Drink("PomegraMint Margarita", "Margarita Glass", "Sugar", ["Altos Reposado 1.5 oz"], [".5 oz Grand Mariner"],["Agave .5 oz,", "Lime Juice 1.5 oz,", "Mint Leaves (5 Muddled),", "Pomegranate Juice 1 oz"], ["Lime,", "Mint Sprig"],"./images/logo.jpg", null);
+   let spicySenorita = new Drink("Spicy Senorita", "Mason Jar", "Tajin Chile Lime Salt", ["Tanteo Jalapeno 2 oz"], ["Solerno .5 oz"], ["Agave .5 oz,", "Blood Orange Juice 1 oz,", "Happy Juice 1 oz"], ["Lime"],"./images/logo.jpg", null);
    let comingSoon = new Drink("Coming Soon",null,null,null,null,null,null,"./images/logo.jpg", null);
    
    //Monthly Specials Mocktails
