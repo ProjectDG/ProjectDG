@@ -9,7 +9,7 @@ function openFullscreen() {
   }
 }
 
-openFullscreen();
+//openFullscreen();
 
 class Drink{
     constructor(name, glass, rim, liquor = [], liqueur = [], mixers = [], garnish = [], photo, batch, instructions= []){
@@ -77,7 +77,7 @@ class Drink{
    //Monthly Specials Mocktails
    let dublinTheFun = new Drink("Dublin The Fun", "Rocks Glass", "Green Sugar",null,null, ["Agave .5 oz,", "Cucumber (3 Slices Muddled),", "Mint Leaves (4-5 Leaves Muddled),", "Soda Water"], ["Cucumber Slice and Mint Leaf"],"./images/logo.jpg", null);
    let gingerPeep = new Drink("Ginger Peep", "Mason Jar",null,null,null, ["Agave .75,", "Blood Orange Juice .75 oz,", "Cucumber Pieces (Muddled),", "Lime Juice .75 oz,", "Ginger Beer (After Shake)"],null,"./images/logo.jpg", null);
-   
+   let spicyBambino = new Drink("Spicy Bambino", "Mason Jar",null,null,null,["Agave .75 oz,", "Blood Orange Juice 1 oz,", "Grapefruit Soda (Topped With),", "Happy Juice 1 oz,", "Jalapenos (3 Slices Muddled)"], ["Lime"],"./images/logo.jpg", null);
 
    // Batch Recipes
    let avocadoSourMixBatch = new Drink("Avocado Sour Mix (Batch)", null, null, null, null, ["Avocado (pre-packaged) 9 oz,", "Agave 12 oz,", "Lime Juice 12 oz,", "Pineapple Juice 12 oz"], null, "./images/logo.jpg", "Batch");
@@ -149,6 +149,7 @@ class Drink{
        skinnyOrganic,
        spicyBerryFresca,
        //specialMargarita,
+       spicyBambino,
        spicySenorita,
        spicyWatermelonMargarita,
        tequilaSour,
