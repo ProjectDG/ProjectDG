@@ -81,7 +81,7 @@ class Drink{
    let gingerPeep = new Drink("Ginger Peep", "Mason Jar",null,null,null, ["Agave .75,", "Blood Orange Juice .75 oz,", "Cucumber Pieces (Muddled),", "Lime Juice .75 oz,", "Ginger Beer (After Shake)"],null,"./images/logo.jpg", null);
    let spicyBambino = new Drink("Spicy Bambino", "Mason Jar",null,null,null,["Agave .75 oz,", "Blood Orange Juice 1 oz,", "Grapefruit Soda (Topped With),", "Happy Juice 1 oz,", "Jalapenos (3 Slices Muddled)"], ["Lime"],"./images/logo.jpg", null);
    let blackberryHibiscusSunrise = new Drink("Blackberry Hibiscus Sunrise", "Mason Jar",null,null,null, ["Agave .25 oz,", " 2 Blackberries, 1 Lemon, 1 Lime ( All Muddled )", "Lime Juice .5 oz,", "Hibiscus Ginger Beer 3 oz ( Topped )"], ["Lemon Wedge and Blackberry"], "./images/logo.jpg", null);
-   let tntRootbeerFloat = new Drink("T & T Rootbeer Float","Pint Glass",null,null,null,["Ice Cream Mix 6 oz,", "Root Beer 1/3 oof Glass,", "Vanilla Ice Cream (Scoop)"],["Cherry"],"./images/logo.jpg", null);
+   let tntRootbeerFloat = new Drink("T & T Rootbeer Float","Pint Glass",null,null,null,["Ice Cream Mix 6 oz,", "Root Beer 1/3 of Glass,", "Vanilla Ice Cream (Scoop)"],["Cherry"],"./images/logo.jpg", null);
 
    // Batch Recipes
    let avocadoSourMixBatch = new Drink("Avocado Sour Mix (Batch)", null, null, null, null, ["Avocado (pre-packaged) 9 oz,", "Agave 12 oz,", "Lime Juice 12 oz,", "Pineapple Juice 12 oz"], null, "./images/logo.jpg", "Batch");
