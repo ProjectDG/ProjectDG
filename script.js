@@ -25,9 +25,6 @@ class Drink{
      this.instructions = instructions;
     };
    };
-
-
-[[[}}}
    
    //drinks for permanent library................................................................................................
    //let aldoronaFB = new Drink("Aldorona (Fish Bowl)", "Fish Bowl", "Guest Choice", ["El Jimador 6 oz"], "Triple Sec 2 oz", ["Lime Juice 1.5 oz,", "Margarita Mix 8 oz"], ["Coronita,", "Lime Wheel"],"./images/.jpg", null);
