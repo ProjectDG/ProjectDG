@@ -1,3 +1,5 @@
+{{{
+
 var elem = document.getElementsByTagName("BODY")[0];
 function openFullscreen() {
   if (elem.requestFullscreen) {
